@@ -3,7 +3,7 @@ lock "3.7.2"
 
 set :application, "cookpad"
 set :repo_url, "git@github.com:nakamra/cookpad.git"
-set :branch, 'Install_Capistrano'
+set :branch, ENV['BRANCH'] || "master"
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
