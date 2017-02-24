@@ -17,3 +17,26 @@ body {
     display: block;
     clear: both;
 }
+
+.wrapper {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  text-align: left;
+  width: 970px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+    color: #845f4b;
+}
+
+a:hover {
+  text-decoration: underline;
+}
