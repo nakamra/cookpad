@@ -1,0 +1,55 @@
+.global-header {
+  @extend .clearfix:after;
+  z-index: 1001;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-bottom: 1px solid #e3dcca;
+  height: 34px;
+
+  li {
+    display: inline-block;
+  }
+
+  .service-menu {
+    font-size: 93%;
+    float: left;
+    padding: 9px 0px;
+
+    &__index a {
+      color: #986f4e;
+    }
+
+    &__link a {
+      color: #986f4e;
+      padding-left: 1px;
+    }
+
+    &__link:before {
+      color: #eee;
+      content: "|";
+      padding-left: 7px;
+    }
+  }
+
+  .global-menu {
+    font-size: 93%;
+    float: right;
+    
+    li {
+      margin-top: 9px;
+      padding-left: 13px;
+      position: relative;
+    }
+
+    &__ps-link a {
+      color: #ff8c1a;
+      font-weight: bold;
+    }
+    &__new-register-link a {
+      color: #330000;
+    }
+    &__login-link a {
+      color: #330000;
+    }
+  }
+}
