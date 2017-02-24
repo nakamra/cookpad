@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+  background: #F7F3E8;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Meiryo", "メイリオ", "Osaka", "MS PGothic", arial, helvetica, sans-serif;
+  line-height: 1.5;
+  background: #F7F3E8;
+  color: #3C3C3C;
+  font-size: 87.5%;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
