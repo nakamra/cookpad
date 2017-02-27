@@ -4,16 +4,52 @@
 
 
     .footer-lower {
-      .lower {}
-        .lower-support {}
+      @extend .clearfix:after;
+      .lower {
+        border-top: 1px solid #e8e2d6;
+        width: 640px;
+        padding-top: 20px;
+        .lower-support {
 
-        .lower-notice {}
+        }
 
-        .lower-company {}
+        .lower-notice {
 
-        .lower-most {}
-          .lower-most__copyright {}
-          .loser-most__country {}
+        }
+
+        .lower-company {
+
+        }
+
+        .lower-most {
+          @extend .clearfix:after;
+          padding: 20px 0;
+          margin: 0;
+          font-size: 86%;
+          color: #4d2200;
+          .lower-most__copyright {
+            float: left;
+            padding: 5px 0;
+          }
+          .lower-most__country {
+            float: right;
+            li {
+              float: left;
+              padding: 5px 3px;
+              a {
+                text-decoration: underline;
+                color: #755353;
+              }
+              a.more-country {
+                display: inline-block;
+                background: #ede7da;
+                border-radius: 3px;
+                padding: 2px 5px;
+              }
+            }
+          }
+        }
+      }
       .lower-form {
 
       }
