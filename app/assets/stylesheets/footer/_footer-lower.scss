@@ -1,0 +1,180 @@
+.footer-lower {
+  .lower-content {
+    @extend .clearfix:after;
+    border-top: 1px solid #e8e2d6;
+    width: 640px;
+    padding-top: 20px;
+    float: left;
+    .content-support {
+      margin-bottom: 10px;
+      height: 28px;
+    }
+    .content-notice {
+
+      border-bottom: 0;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      .more-company__link {
+        font-size: 86%;
+        text-align: right;
+        clear: both;
+        text-decoration: underline;
+      }
+    }
+    .content-company {
+
+    }
+
+    .content__title {
+      width: 80px;
+      font-size: 93%;
+      font-weight: bold;
+      display: block;
+      float: left;
+      color: #4d2200;
+    }
+
+    .content__list {
+      font-size: 86%;
+      float: left;
+      width: 550px;
+      margin:0 0 5px 10px;
+      li {
+        text-decoration: underline;
+        display: block;
+        padding-right: 5px;
+        float: left;
+        margin-bottom: 5px;
+        span {
+          font-size: 79%;
+          color: #330000;
+          display: inline-block;
+          padding-right: 5px;
+        }
+        a {
+          color: #755353;
+          padding-top: 5px
+        }
+      }
+    }
+
+    .lower-most {
+      @extend .clearfix:after;
+      padding: 20px 0;
+      margin: 0;
+      font-size: 86%;
+      color: #4d2200;
+      .lower-most__copyright {
+        float: left;
+        padding: 5px 0;
+      }
+      .lower-most__country-list {
+        float: right;
+        li {
+          float: left;
+          padding: 5px 3px;
+          a {
+            text-decoration: underline;
+            color: #755353;
+          }
+          a.more-country {
+            display: inline-block;
+            background: #ede7da;
+            border-radius: 3px;
+            padding: 2px 5px;
+          }
+        }
+      }
+    }
+  }
+  .lower-form {
+    float: right;
+    width: 300px;
+    #form-help {
+      width: 270px;
+      margin: 0 0 15px 0;
+      padding: 15px;
+      background: #ede7da;
+      border-radius: 5px;
+      border: 1px solid #e3dcca;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+      .form-help {
+        &__label {
+          font-size: 93%;
+          margin-bottom: 10px;
+          color: #4d2200;
+          font-weight: bold;
+        }
+        &__btn {
+          color: #999999;
+          a {
+            font-size: 86%;
+            border-radius: 3px;
+            text-decoration: none;
+            border: 1px solid #cccccc;
+            background: #ffffff;
+            padding: 6px 12px;
+            min-width: 100px;
+            display: inline-block;
+            img {
+              width: 8px;
+              height: 12px;
+              position: relative;
+              top: 2px;
+            }
+          }
+        }
+      }
+    }
+    #form-opinion {
+      float: right;
+      width: 270px;
+      background: #ede7da;
+      margin-bottom: 30px;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #e3dcca;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+      .form-opinion {
+        &__label {
+          font-size: 93%;
+          margin-bottom: 10px;
+          color: #4d2200;
+          font-weight: bold;
+        }
+        &__textarea {
+          width: 260px;
+          border-radius: 3px;
+          border: 1px solid #C5C5C5;
+          font-size: 108%;
+          height: 90px;
+          padding: 5px;
+          margin-left: 0;
+          margin-bottom: 5px;
+          box-shadow: inset 1px 1px 4px #e6e6e6;
+          vertical-align: middle;
+          display: inline-block;
+          font-weight: normal;
+          background-color: #FFFFFF;
+        }
+        &__btn {
+          background: linear-gradient(to bottom, #ffffff, #ececec);
+          border: 1px solid #cccccc;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+          display: inline-block;
+          text-align: center;
+          vertical-align: middle;
+          text-decoration: none;
+          text-shadow: 0 1px 0 #fff;
+          cursor: pointer;
+          border-radius: 3px;
+          font-weight: normal;
+          margin: 6px 0 0;
+          padding: 6px 12px;
+          min-width: 100px;
+          color: #3c3c3c;
+        }
+      }
+    }
+  }
+}
