@@ -5,20 +5,48 @@
 
     .footer-lower {
       @extend .clearfix:after;
-      .lower {
+
+      .lower-content {
         border-top: 1px solid #e8e2d6;
         width: 640px;
         padding-top: 20px;
-        .lower-support {
+        float: left;
+
+        .content-support {
 
         }
-
-        .lower-notice {
-
+        .content-notice {
+          border-bottom: 0;
+          margin-bottom: 10px;
+          padding-bottom: 10px;
+          .more-company__link {
+            font-size: 86%;
+            text-align: right;
+            clear: both;
+          }
+        }
+        .content-company {
         }
 
-        .lower-company {
+        .content__title {
+          width: 80px;
+          font-size: 93%;
+          font-weight: bold;
+          display: block;
+          float: left;
+          color: #4d2200;
+        }
 
+        .content__list {
+          font-size: 86%;
+          float: left;
+          width: 550px;
+          margin-bottom: 5px;
+          li {
+            display: block;
+            padding-right: 5px;
+            float: left;
+          }
         }
 
         .lower-most {
@@ -31,7 +59,7 @@
             float: left;
             padding: 5px 0;
           }
-          .lower-most__country {
+          .lower-most__country-list {
             float: right;
             li {
               float: left;
@@ -51,7 +79,19 @@
         }
       }
       .lower-form {
-
+        #form-help {
+          .form-help {
+            .&__label {}
+            .&__btn {}
+          }
+        }
+        #form-opinion {
+          .form-opinion {
+            .&__label {}
+            .&__textarea {}
+            .&__btn {}
+          }
+        }
       }
     }
   }
