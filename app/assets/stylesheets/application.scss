@@ -1,3 +1,6 @@
-@import "reset";
-@import "base";
-@import "global-header";
+@import "base/yui_reset";
+@import "base/color";
+@import "base/base";
+
+@import "global-header/global-header";
+@import "header/header"
