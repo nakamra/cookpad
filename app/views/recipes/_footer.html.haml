@@ -10,10 +10,10 @@
       .middle__grid-5
 
     .footer-lower
-      .lower
-        .lower-suppor
-          .lower-support__title サポート
-          %ul.lower-support__link
+      .lower-content
+        .content-support
+          .content__title サポート
+          %ul.content__list
             %li
               %a{:href => "/"} ヘルプ
             %li
@@ -24,9 +24,9 @@
               %a{:href => "/"} 利用規約
             %li
               %a{:href => "/"} リンクについて
-        .lower-notice
-          .lower-notice__title お知らせ
-          %ul.lower-notice__link
+        .content-notice
+          .content__title お知らせ
+          %ul.content__list
             %li
               %span.date 17/02/22
               %a{:href => "/"} フジテレビ「ノンストップ！」でクックパッドのブロッコリーレシピを紹介！
@@ -42,11 +42,11 @@
             %li
               %span.date 17/01/25
               %a{:href => "/"} フジテレビ「ノンストップ！」でクックパッドのサバレシピを紹介！
-          %span
-            %a.more-company-link{:href => "/"} もっと見る
-        .lower-company
-          .lower-company__title 企業情報
-          %ul.lower-company__link
+          .more-company__link
+            %a{:href => "/"} もっと見る
+        .content-company
+          .content__title 企業情報
+          %ul.content__list
             %li
               %a{:href => "/"} 運営会社
             %li
@@ -63,7 +63,7 @@
               %a{:href => "/"} 採用情報
         .lower-most
           .lower-most__copyright Copyright© Cookpad Inc. All Rights Reserved
-          %ul.lower-most__country
+          %ul.lower-most__country-list
             %li
               %span 日本
             %li
@@ -81,3 +81,12 @@
             %li
               %a.more-country{:href => "/"}...
       .lower-form
+        #form-help
+          .form-help
+            .form-help__label
+            .form-help__btn
+        #form-opinion
+          .form-opinion
+            .form-opinion__label
+            .form-opinion__textarea
+            .form-opinion__btn
