@@ -1,10 +1,12 @@
 .global-header {
-  @extend .clearfix:after;
   z-index: 1001;
   background-color: #FFFFFF;
   width: 100%;
   border-bottom: 1px solid #e3dcca;
   height: 34px;
+  position: fixed;
+  top: 0;
+  left: 0;
 
   li {
     display: inline-block;
@@ -19,25 +21,29 @@
       color: #986f4e;
     }
 
+    &__index:after {
+      color: #eee;
+      content: "|";
+      padding-left: 6.5px;
+    }
+
     &__link a {
       color: #986f4e;
-      padding-left: 1px;
+      padding-left: 1.9px;
     }
 
     &__link:before {
-      color: #eee;
-      content: "|";
-      padding-left: 7px;
+
     }
   }
 
   .global-menu {
     font-size: 93%;
     float: right;
-    
+
     li {
       margin-top: 9px;
-      padding-left: 13px;
+      padding-left: 12.7px;
       position: relative;
     }
 

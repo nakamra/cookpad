@@ -1,0 +1,26 @@
+.search
+  .search-form
+    = form_for @recipe, method: 'GET' do |f|
+      %span.search-form__category
+        = f.text_field :name, placeholder: "料理名・食材名"
+      %span.search-form__cross
+        = image_tag("https://assets.cpcdn.com/assets/shared/search_cross.png?472c95c3f05125c6b980363809532054062a90f554bb69b80e980c91e33cd301")
+      %span.search-form__purpose
+        = f.text_field :name, placeholder: "目的・用途", id: "purpose"
+      .search-form__submit-btn
+        = f.submit "レシピ検索", id: "submit-button"
+
+  .search-keyword
+    %ul.search-keyword__list
+      %li
+        %a ランチ
+      %li
+        %a ひな祭り
+      %li
+        %a 離乳食
+      %li
+        %a 菜の花
+      %li
+        %a リゾット
+  %a.search-keyword__more--link{:href => "/"}
+    = image_tag("https://assets.cpcdn.com/assets/icon/trend_keyword_list_arrow.png?51af8bd0ee2dcaef08db5b1cb9615cc1941c74a4a48e3115cd50fb613ac9d074")
