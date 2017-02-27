@@ -1,24 +1,27 @@
 .header
-  .logo
-    .logo__cookpad
-    .logo__recipe
-      .logo__recipe__body
-      .logo__recipe__count
-  .header-search
-    .header-searchform
-      .header-search-form__category
-      .header-search-form__cross
-      .header-search-form__purpose
-      .header-search-form__submit-btn
-    .header-search__keyword-list
-      .header-search__keyword-list
-        .header-search__keyword-list--trend
-        .header-search__keyword-list--trend
-        .header-search__keyword-list--trend
-        .header-search__keyword-list--trend
-        .header-search__keyword-list--trend
-      .header-search__keyword-list--more
-  .header-my-menu
-    .header-my-menu__folder
-    .header-my-menu__news
-    .header-my-menu__post-btn
+  .header-container
+    %a.logo{:href => "/"}
+      = image_tag("https://assets.cpcdn.com/assets/global/logo/logo_header.png?05bcda402e6748d4ca52ceedab6d3e5c1367614e68270f97b7b4700b1c2ccd9a", class: "logo__cookpad f_left")
+      .logo__recipe
+        %span.logo__recipe__body
+          261
+          %span.small 万
+        %span.logo__recipe__body
+          %span.small レシピ
+    = render "search"
+    .my-menu
+      %ul.my-menu-list
+        %li.my-menu-list__folder
+          %a.my-menu-list__folder--link{:href => "/"}
+            = image_tag("https://assets.cpcdn.com/assets/global/icon_service_menu_myfolder.png?2127c6aa780d041dae4ed00ccffecaf280bbcf51ee47d1236e9373af728651d7")
+            %span MYフォルダ
+        %li.my-menu-list__news
+          %a.my-menu-list__news--link{:href => "/"}
+            = image_tag("https://assets.cpcdn.com/assets/global/icon_service_menu_mynews.png?811af90bef00a468e5022a4a417b851d9af8a0ad62ad615a572d98c18e87b85c")
+            %span MYニュース
+            %span.date 27
+        %li.my-menu-list__post-btn
+          %a.my-menu-list__post-btn--link{:href => "/"}
+            %span
+              = image_tag("https://assets.cpcdn.com/assets/global/icon_service_menu_post_recipe.png?a8329a321de116df7515a4d363e1914036c95b1caedc2c3b505388c93f7366b7")
+              レシピを書く
