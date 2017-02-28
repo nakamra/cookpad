@@ -1,11 +1,30 @@
 .contents {
+  height: 100%;
   .contents-main {
+    height: 100%;
+    float: left;
+    width: 650px;
+
     @import "feature-box";
     .recipe-box {}
   }
   .contents-side {
-    .contents-side__ad {
-
+    float: right;
+    width: 300px;
+    .ad {
+      .ad--link {
+        display: block;
+        background-color: transparent;
+        .ad--link_image {
+          background-image: url("/images/ad.jpg");
+          background-position: center;
+          background-size: cover;
+          max-width: 300px;
+          height: 600px;
+          margin: 0 auto;
+        }
+      }
     }
   }
+
 }
