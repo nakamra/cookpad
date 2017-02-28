@@ -4,29 +4,35 @@
   margin-top: 14px;
   .search-form {
     #new_recipe {
+      height: 32px;
+      line-height: 18px;
       position: relative;
       #recipe_name {
-        height: 100%;
-        float: left;
         background: #ffffff url(/images/icon_header_search.png)7px 50% no-repeat;
-        margin: 0 5px 0 0;
+        float: left;
+        height: 100%;
+        width: 210px;
         padding: 6px 0 6px 5px;
         padding-left: 27px;
-        width: 210px;
-        border-radius: 3px;
         font-size: 86%;
+      }
+      .search-form__cross {
+        float: left;
+        margin: 6px 4px 0 0;
       }
 
       .search-form__purpose #purpose {
-        height: 32px;
+        float: left;
+        height: 100%;
         width: 90px;
-        border-radius: 3px;
-        font-size: 86%;
-        margin-right: 0;
         padding: 6px 0 6px 5px;
+        font-size: 86%;
+        margin-right: 3px;
       }
+
       .search-form__submit-btn {
         display: inline-block;
+
         #submit-button{
           height: 32px;
           border: 1px solid #cccccc;
