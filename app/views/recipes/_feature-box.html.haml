@@ -1,28 +1,89 @@
 .feature-box.box
   .feature-menu
     .recipe-menu
-      .recipe-menu__list
+      .recipe-menu__link.title_bar
+        %a{:href => "/"} レシピ関連サービス
+      %ul.recipe-menu__list
+        %li
+          %a{:href => "/"}
+            %span みんなのレシピ
+        %li
+          %a{:href => "/"}
+            %span プロのレシピ
+        %li
+          %a{:href => "/"}
+            %span 献立
+        %li
+          %a{:href => "/"}
+            %span 料理動画
+        %li
+          %a{:href => "/"}
+            %span 話題のキッチン
     .p_service-menu
-      .p_service-menu__list
+      .p_service-menu__link.title_bar
+        %a{:href => "/"} プレミアムサービス
+      %ul.p_service-menu__list
+        %li
+          %a{:href => "/"} 人気順検索
+        %li
+          %a{:href => "/"} レシピランキング
+        %li
+          %a{:href => "/"} 殿堂入りレシピ
+        %li
+          %a{:href => "/"} 専門家厳選レシピ
+        %li
+          %a{:href => "/"} プレミアム献立
       .p_service-menu__more
+        %a{:href => "/"} もっと見る
     .life_service-menu
-      .life_service-menu__list
+      .life_service-menu__link.title_bar
+        %a{:href => "/"} 生活関連サービス
+      %ul.life_service-menu__list
+        %li
+          %a{:href => "/"} チラシ・特売
+        %li
+          %a{:href => "/"} 料理教室
+        %li
+          %a{:href => "/"} ベビー
       .life_service-menu__more
+        %a{:href => "/"} もっと見る
   .feature-main
-    .main-image
-    .main-title
-      .main-title__date
-      .main-title__body
-        .main-title__user
-  .feature-news
-    .news-link
-    .news-top
-      .news-top__image
-      .news-top__title
-      .news-top__body
-    .news-list
-    .news-more-link
-  .feature-trend
-    .trend-link
-    .trend-top
-    .trend-list
+    .feature-pickup
+      .pickup-image
+        = image_tag("https://img.cpcdn.com/recipes/1080585/447x251c/e233eaeef442525cc505dd0ed7453abe.jpg?u=265488&p=1337952368")
+      .pickup-title
+        %span.pickup-title__date 2月28日のおすすめ
+        #pickup-title
+          .pickup-title__body ＊薄切りポテトとチーズのグラタン＊
+          .pickup-title__user Ery
+    .feature-news
+      .news-link.title_bar
+        %a{:href => "/"} ニュース
+      #news-top
+        %a.news-top{:href => "/"}
+          .news-top__image
+            = image_tag("https://img.cpcdn.com/news_articles/22672/100x100c/0c2d4793af33ecb4edf495fd41cb72ef.jpg")
+          #news-top__title
+            .news-top__title 食材１つ「にんじんだけチヂミ」
+            %span.news-top__body にんじんだけで作れる、甘みがあっておいしい、ボリューム感あるチヂミ。材料を混ぜて焼くだけ♪
+        %ul.news-list
+          %li
+            %a{:href => "/"} ホワイトデーに☆コスパスイーツ
+          %li
+            %a{:href => "/"} 人気検索キーワードランキング！
+          %li
+            %a{:href => "/"} 新感覚スナック「マヨネー麩」
+          %li
+            %a{:href => "/"} きな粉でハマるおやつトースト
+        .news-more-link
+          %a{:href => "/"} もっと見る
+    .feature-trend
+      .trend-link.title_bar
+        %a{:href => "/"} おすすめの話題
+      #trend-top
+        .trend-top 超簡単「三角おにぎり」がフォトジェニックで可愛い
+        %ul.trend-list
+          %li
+            %a{:href => "/"} 冷えも解消♪ぽかぽか料理大募集
+          %li
+            %a{:href => "/"}子供も夢中になる♪卵あんかけ
