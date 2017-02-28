@@ -1,0 +1,21 @@
+.wrapper {
+  height: 100%;
+  margin-top: 34px;
+  min-width: 970px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  text-align: left;
+  width: 970px;
+}
+
+.box {
+  border-radius: 5px;
+  background: #ffffff;
+  border: 1px solid #ded5c0;
+}
