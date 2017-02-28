@@ -1,9 +1,14 @@
-.footer {
-  width: 970px;
-  margin: 0px auto;
-  .container {
-    text-align: center;
-    @import "footer-middle";
-    @import "footer-lower";
+#footer {
+  background: url(/images/mega_footer_bg.png) top center repeat-x;
+  margin-top: -40px;
+  .footer {
+    padding-top: 240px;
+    width: 970px;
+    margin: 0px auto;
+    .container {
+      text-align: center;
+      @import "footer-middle";
+      @import "footer-lower";
+    }
   }
 }
