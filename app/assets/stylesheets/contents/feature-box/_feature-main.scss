@@ -1,6 +1,6 @@
 .feature-main {
   float: right;
-  width: 478px;
+  width: 477px;
   min-height: 700px;
   border-left: 1px solid #e8e2d6;
   .feature-pickup {
@@ -46,9 +46,6 @@
   .feature-news {
     .news-link {
       border-top: 1px solid #e8e2d6;
-      a:visited {
-          color: #3c3c3c;
-      }
     }
     .news-list {
       padding: 15px 10px 0 15px;
@@ -74,7 +71,7 @@
           .news-top__article--title {
             font-size: 143%;
             font-weight: bold;
-            color: #333333;
+            color: #330000;
             margin-bottom: 10px;
           }
           .news-top__article--title:hover {
@@ -114,9 +111,6 @@
   .feature-trend {
     .trend-link {
       border-top: 1px solid #e8e2d6;
-      a:visited {
-          color: #3c3c3c;
-      }
     }
     .trend-list {
       @extend .clearfix:after;
