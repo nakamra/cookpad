@@ -1,4 +1,6 @@
 .feature-menu {
+  float: left;
+  width: 169px;
   li {
     a {
       color: #330000;
@@ -9,8 +11,6 @@
       color: #663333;
     }
   }
-  float: left;
-  width: 169px;
   .recipe-menu {
     .recipe-menu__link {
       border-radius: 4px 0 0 0;
