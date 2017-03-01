@@ -1,0 +1,72 @@
+.feature-menu {
+  li {
+    a {
+      color: #330000;
+      line-height: 33px;
+      padding-left: 15px;
+    }
+    a:hover {
+      color: #663333;
+    }
+  }
+  float: left;
+  width: 169px;
+  .recipe-menu {
+    .recipe-menu__link {
+      border-radius: 4px 0 0 0;
+      a:visited {
+          color: #3c3c3c;
+      }
+    }
+    .recipe-menu__list {
+      padding-bottom: 7px;
+
+    }
+  }
+  .p_service-menu {
+    .p_service-menu__link {
+      border-top: 1px solid #ded5c0;
+      a:visited {
+          color: #3c3c3c;
+      }
+    }
+    .p_service-menu__list {
+      height: 163px;
+      padding-bottom: 7px;
+    }
+    .p_service-menu__more {
+      padding: 0 10px 7px 0;
+      display: block;
+      font-size: 86%;
+      font-weight: bold;
+      text-align: right;
+      a {
+        text-decoration: underline;
+        color: #330000;
+      }
+    }
+  }
+  .life_service-menu {
+    .life_service-menu__link {
+      border-top: 1px solid #ded5c0;
+      a:visited {
+          color: #3c3c3c;
+      }
+    }
+    .life_service-menu__list {
+      margin: 5px;
+      padding-bottom: 0;
+    }
+    .life_service-menu__more {
+      padding: 0 10px 7px 0;
+      display: block;
+      font-size: 86%;
+      font-weight: bold;
+      text-align: right;
+      a {
+        text-decoration: underline;
+        color: #330000;
+      }
+    }
+  }
+}
