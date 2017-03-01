@@ -1,0 +1,9 @@
+.recipe-box {
+  .recipe-box__title {
+  @import "ranking";
+  @import "honor-recipe";
+  @import "category";
+  @import "select-recipe";
+  @import "trend-kitchen";
+  }
+}
