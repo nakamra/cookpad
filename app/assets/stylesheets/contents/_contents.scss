@@ -6,7 +6,7 @@
     width: 650px;
 
     @import "feature-box/feature-box";
-    .recipe-box {}
+    @import "recipe-box/recipe-box";
   }
   .contents-side {
     float: right;
