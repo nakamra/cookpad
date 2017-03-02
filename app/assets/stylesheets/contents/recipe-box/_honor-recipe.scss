@@ -1,7 +1,7 @@
 .honor-recipe {
   .honor-recipe__title {
     @include title_bar;
-    border-top: 1px solid $LightBrown;
+    @include border-top($LightBrown);
     img {
       vertical-align: middle;
       height: 16px;
