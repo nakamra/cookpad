@@ -12,7 +12,8 @@
     }
   }
   .recipe-menu {
-    .recipe-menu__link {
+    .recipe-menu__title {
+      @include title_bar;
       border-radius: 4px 0 0 0;
       a:visited {
           color: #3c3c3c;
@@ -24,7 +25,8 @@
     }
   }
   .p_service-menu {
-    .p_service-menu__link {
+    .p_service-menu__title {
+      @include title_bar;
       border-top: 1px solid #ded5c0;
       a:visited {
           color: #3c3c3c;
@@ -47,7 +49,8 @@
     }
   }
   .life_service-menu {
-    .life_service-menu__link {
+    .life_service-menu__title {
+      @include title_bar;
       border-top: 1px solid #ded5c0;
       a:visited {
           color: #3c3c3c;
