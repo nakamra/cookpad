@@ -1,4 +1,23 @@
 .honor-recipe {
-  .honor-recipe_text {}
-  .honor-recipe_image {}
+  .honor-recipe__title {
+    @include title_bar;
+    img {
+      vertical-align: middle;
+      height: 16px;
+      width: 16px;
+    }
+  }
+  .honor-recipe__container {
+    a {
+      .honor-recipe__text {
+        .honor-recipe__text--left {}
+        .honor-recipe__text--right {}
+      }
+      .honor-recipe_images {
+        image {
+
+        }
+      }
+    }
+  }
 }
