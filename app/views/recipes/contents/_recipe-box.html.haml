@@ -2,20 +2,20 @@
   .recipe-box__title レシピ
   .ranking
     .ranking-box
-      .ranking-box__title.title_bar
+      .ranking-box__title
         = image_tag("/images/icon_ps_large.png")
         %a{:href => "/"} デイリーアクセス数ランキング
       %a{:href => "/"}
         %ul.ranking-box__list
           %li.first-recipe
-            = image_tag("/images/ranking_1st.png", class: "first-recipe__rank1st-crown")
-            = image_tag("https://img.cpcdn.com/recipes/_o1l5be69/198x198c/817dcf58e2d2f0c4ba545e83ea33b8f0.jpg?u=265488&p=1337952368", class: "first-recipe__image")
-          %li.second-recipe
-            = image_tag("/images/ranking_2nd.png", class: "second-recipe__rank2nd-crown")
-            = image_tag("https://img.cpcdn.com/recipes/_o1d1b3247/94x94c/8313105231013b1ed483c07112c605ad.jpg?u=866854&p=1258716128", class: "second-recipe__image")
-          %li.third-recipe
-            = image_tag("/images/ranking_3rd.png", class: "third-recipe__rank3rd-crown")
-            = image_tag("https://img.cpcdn.com/recipes/_o1fdb9d9/94x94c/289311fa915357c62bf1da1dab4f4c05.jpg?u=1088838&p=1358341273", class: "third-recipe__image")
+            = image_tag("/images/ranking_1st.png", class: "first-recipe__crown")
+            = image_tag("https://img.cpcdn.com/recipes/_o1l5be69/198x198c/817dcf58e2d2f0c4ba545e83ea33b8f0.jpg?u=265488&p=1337952368", class: "recipe__image")
+          %li.recipe
+            = image_tag("/images/ranking_2nd.png", class: "recipe__crown")
+            = image_tag("https://img.cpcdn.com/recipes/_o1d1b3247/94x94c/8313105231013b1ed483c07112c605ad.jpg?u=866854&p=1258716128", class: "recipe__image")
+          %li.recipe
+            = image_tag("/images/ranking_3rd.png", class: "recipe__crown")
+            = image_tag("https://img.cpcdn.com/recipes/_o1fdb9d9/94x94c/289311fa915357c62bf1da1dab4f4c05.jpg?u=1088838&p=1358341273", class: "recipe__image")
         .ranking-box__popular-link
           %span.focus-text
             みんなが見た人気のレシピ
@@ -23,7 +23,7 @@
               20
             品
     .trend-recipe-box
-      .trend-recipe-box__title.title_bar
+      .trend-recipe-box__title
         %a{:href => "/"}
           話題のレシピ
         %span つくれぽ１０人おめでとう！
