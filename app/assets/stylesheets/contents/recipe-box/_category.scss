@@ -1,6 +1,84 @@
 .category {
-  .category__title {}
-  .category__top {}
+  height: 100%;
+  .category__title {
+    @include title_bar;
+    @include border-top($LightBrown);
+  }
+  .category__top {
+    @extend .clearfix;
+    .left-container {
+      float: left;
+      width: 50%;
+      .left-inner {
+        padding: 15px 15px 5px 15px;
+        a:hover {
+          opacity: 0.9;
+        }
+        .left-container__image {
+          float: left;
+          margin-right: 10px;
+          width: 80px;
+          height: 80px;
+          img {
+            vertical-align: middle;
+            border-radius: 5px;
+          }
+        }
+        .left-container__recipe{
+          overflow: hidden;
+          @extend .clearfix;
+          .left-container__recipe-title {
+            font-size: 115%;
+            font-weight: bold;
+            margin-bottom: 3px;
+          }
+          .left-container__recipe-title:hover {
+            text-decoration: underline;
+          }
+          .left-container__recipe-body {
+            font-size: 86%;
+            color: $LightGray;
+          }
+        }
+      }
+    }
+    .right-container {
+      float: right;
+      width: 50%;
+      .right-inner {
+        padding: 15px 15px 5px 15px;
+        a:hover {
+          opacity: 0.9;
+        }
+        .right-container__image {
+          float: left;
+          margin-right: 10px;
+          width: 80px;
+          height: 80px;
+          img {
+            vertical-align: middle;
+            border-radius: 5px;
+          }
+        }
+        .right-container__recipe {
+          overflow: hidden;
+          @extend .clearfix;
+          .right-container__recipe-title {
+            font-size: 115%;
+            font-weight: bold;
+            margin-bottom: 3px;
+          }
+          .right-container__recipe-title:hover {
+            text-decoration: underline;
+          }
+          .right-container__recipe-body {
+            font-size: 86%;
+            color: $LightGray;
+          }
+        }
+      }
+    }
+  }
   .category__list {}
   .category__more {}
 }
