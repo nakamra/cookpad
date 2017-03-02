@@ -1,60 +1,21 @@
 .recipe-box.box
   .recipe-box__title レシピ
-  .ranking
-    .ranking-box
-      .ranking-box__title
-        = image_tag("/images/icon_ps_large.png")
-        %a{:href => "/"} デイリーアクセス数ランキング
-      %a{:href => "/"}
-        %ul.ranking-box__list
-          %li.first-recipe
-            = image_tag("/images/ranking_1st.png", class: "first-recipe__crown")
-            = image_tag("https://img.cpcdn.com/recipes/_o1l5be69/198x198c/817dcf58e2d2f0c4ba545e83ea33b8f0.jpg?u=265488&p=1337952368", class: "recipe__image")
-          %li.recipe
-            = image_tag("/images/ranking_2nd.png", class: "recipe__crown")
-            = image_tag("https://img.cpcdn.com/recipes/_o1d1b3247/94x94c/8313105231013b1ed483c07112c605ad.jpg?u=866854&p=1258716128", class: "recipe__image")
-          %li.recipe
-            = image_tag("/images/ranking_3rd.png", class: "recipe__crown")
-            = image_tag("https://img.cpcdn.com/recipes/_o1fdb9d9/94x94c/289311fa915357c62bf1da1dab4f4c05.jpg?u=1088838&p=1358341273", class: "recipe__image")
-        .ranking-box__popular-link
-          %span.focus-text
-            みんなが見た人気のレシピ
-            %span.font18
-              20
-            品
-    .trend-recipe-box
-      .trend-recipe-box__title
-        %a{:href => "/"}
-          話題のレシピ
-        %span つくれぽ１０人おめでとう！
-      .trend-recipe-container
-        %ul
-          %li.trend-recipe__list
-            %a{:href => "/"}
-              = image_tag("https://img.cpcdn.com/recipes/3899525/94x94c/2dd4066c0ff4afcde79476ed191ca70a.jpg?u=1350567&p=1465025048")
-              %span.trend-recipe__list--title
-                簡単ランチに♪さっぱり梅ごぼうチャーハン
-              %span.trend-recipe__list--user-name
-                by とこきち
-          %li.trend-recipe__list
-            %a{:href => "/"}
-              = image_tag("https://img.cpcdn.com/recipes/3656183/94x94c/797f79f0c0764656c65a57dfc87e1ebb.jpg?u=6279574&p=1454202752")
-              %span.trend-recipe__list--title
-                HM＆バナナだけ！簡単スコーン風蒸しパン
-              %span.trend-recipe__list--user-name
-                by Nozomi0922
-          %li.trend-recipe__last
-            %a{:href => "/"}
-              = image_tag("https://img.cpcdn.com/recipes/3070123/94x94c/903bf161d63f115244ec737a047cb826.jpg?u=7561728&p=1449475883")
-              %span.trend-recipe__list--title
-                お家で鯛茶漬け♫
-              %span.trend-recipe__list--user-name
-                by Yukkohaha
-        .trend-recipe__more-link
-          %a{:href => "/"} もっと見る
+  = render "recipes/contents/ranking"
   .honor-recipe
-    .honor-recipe_text
-    .honor-recipe_image
+    .honor-recipe__title
+      = image_tag("/images/icon_ps_large.png")
+      %a{:href => "/"} 殿堂入りレシピ
+    .honor-recipe__container
+      %a{:href => "/"}
+        .honor-recipe__text
+          %span.honor-recipe__text--left
+            つくれぽ1000人以上！
+          %span.honor-recipe__text--right
+            殿堂入り お菓子 208品
+        .honor-recipe_images
+          = image_tag("https://img.cpcdn.com/recipes/_o1jadh2/72x72c/e88857f3df0b7ca84e39252ac299ad2a.jpg")
+          = image_tag("https://img.cpcdn.com/recipes/_o1j14017/72x72c/9d6f5f5372aa6e9293ea80a5f57fd1c0.jpg")
+          = image_tag("https://img.cpcdn.com/recipes/_o1caba16/72x72c/188ee5b9345bead023f66c694222af48.jpg")
   .category
     .category__title
     .category__top
