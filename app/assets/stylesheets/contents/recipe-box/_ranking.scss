@@ -5,16 +5,11 @@
     max-height: 318px;
     width: 323px;
     .ranking-box__title {
+      @include title_bar;
       img{
         vertical-align: middle;
         height: 16px;
         width: 16px;
-      }
-      span {
-        font-size: 79%;
-        color: #666666;
-        font-weight: normal;
-        padding-left: 5px;
       }
     }
     a:hover {
@@ -29,57 +24,23 @@
         margin: 0 10px 10px 0;
         position: relative;
         float: left;
-        .first-recipe__rank1st-crown {
-          z-index: 1;
-          background: #ffffff;
-          position: absolute;
-          top: -10px;
-          left: -6px;
-          vertical-align: middle;
-          border-radius: 5px;
-        }
-        .first-recipe__image {
-          vertical-align: middle;
-          border-radius: 5px;
-          z-index: 0;
+        .first-recipe__crown {
+          @include crown;
         }
       }
-      .second-recipe {
+      .recipe {
         float: left;
         height: auto;
         position: relative;
         margin-bottom: 10px;
-        .second-recipe__rank2nd-crown {
-          z-index: 1;
-          background: #ffffff;
-          position: absolute;
-          top: -10px;
-          left: -6px;
-          border-radius: 5px;
-        }
-        .second-recipe__image {
-          vertical-align: middle;
-          border-radius: 5px;
-          z-index: 0;
+        .recipe__crown {
+          @include crown;
         }
       }
-      .third-recipe {
-        float: left;
-        height: auto;
-        position: relative;
-        .third-recipe__rank3rd-crown {
-          z-index: 1;
-          background: #ffffff;
-          position: absolute;
-          top: -10px;
-          left: -6px;
-          border-radius:  5px;
-        }
-        .third-recipe__image {
-          vertical-align: middle;
-          border-radius: 5px;
-          z-index: 0;
-        }
+      .recipe__image {
+        vertical-align: middle;
+        border-radius: 5px;
+        z-index: 0;
       }
     }
     .ranking-box__popular-link{
@@ -100,13 +61,7 @@
     width: 50%;
     border-left: 1px solid #e8e2d6;
     .trend-recipe-box__title {
-      span {
-        font-size: 79%;
-        color: #666666;
-        font-weight: normal;
-        padding-left: 5px;
-        text-decoration: none;
-      }
+      @include title_bar;
     }
     .trend-recipe-container {
       height: 246px;
@@ -130,7 +85,7 @@
           }
           .trend-recipe__list--user-name {
             font-size: 79%;
-            color: #999999;
+            color: $LightGray;
           }
         }
         .trend-recipe__last {
@@ -145,14 +100,9 @@
         font-weight: bold;
         font-size: 86%;
         a {
-          color: #330000;
+          color: $DarkBrown;
         }
       }
     }
   }
-}
-
-a span .trend-recipe__list--user-name {
-  display: block;
-  text-decoration: none;
 }
