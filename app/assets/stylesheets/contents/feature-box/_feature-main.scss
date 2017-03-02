@@ -44,7 +44,8 @@
     }
   }
   .feature-news {
-    .news-link {
+    .news-title {
+      @include title_bar;
       border-top: 1px solid #e8e2d6;
     }
     .news-list {
@@ -109,7 +110,8 @@
     }
   }
   .feature-trend {
-    .trend-link {
+    .trend-title {
+      @include title_bar;
       border-top: 1px solid #e8e2d6;
     }
     .trend-list {
