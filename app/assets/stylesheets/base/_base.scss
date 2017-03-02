@@ -12,10 +12,13 @@ body {
   font-size: 87.5%;
 }
 
-.clearfix:after {
-    content: " ";
-    display: block;
+.clearfix {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: table;
     clear: both;
+  }
 }
 
 a {
@@ -26,9 +29,9 @@ a:visited {
     color: #845f4b;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+// a:hover {
+//   text-decoration: underline;
+// }
 
 .f_left {
   float: left;

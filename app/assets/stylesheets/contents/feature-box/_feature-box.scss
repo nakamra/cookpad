@@ -1,5 +1,5 @@
 .feature-box {
-  @extend .clearfix:after;
+  @extend .clearfix;
   height: 700px;
   @import "feature-menu";
   @import "feature-main";

@@ -115,7 +115,7 @@
       border-top: 1px solid #e8e2d6;
     }
     .trend-list {
-      @extend .clearfix:after;
+      @extend .clearfix;
       padding: 15px 10px 0 15px;
       a {
         background: url(/images/icon_arrow.png) 0 0 no-repeat;
