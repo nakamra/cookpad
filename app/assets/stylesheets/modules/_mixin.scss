@@ -34,3 +34,7 @@
 @mixin border-top($color) {
   border-top: 1px solid $color;
 }
+
+@mixin background($url: '/images/category_icons.png', $x: 0px, $y: 0px) {
+  background: url($url) no-repeat $x $y;
+}
