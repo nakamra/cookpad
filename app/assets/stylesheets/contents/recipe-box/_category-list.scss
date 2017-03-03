@@ -1,0 +1,74 @@
+.category-list {
+  padding: 10px 0 0 15px;
+  ul {
+    @extend .clearfix;
+    .category__box {
+      float: left;
+      width: 33%;
+      margin-bottom: 25px;
+      .category__icon {
+        margin-right: 10px;
+        a {
+          display: block;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .category__body {
+        overflow: hidden;
+        a.category__title {
+          font-size: 115%;
+          font-weight: bold;
+        }
+        .sub-category-list {
+          font-size: 86%;
+          margin-top: 5px;
+          li {
+            margin-bottom: 2px;
+            a {
+              padding-left: 12px;
+              @include background('/images/icon_arrow.png');
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.category__icon--vege {
+  @include background;
+}
+.category__icon--meat {
+
+}
+.category__icon--fish {
+
+}
+.category__icon--rice {
+
+}
+.category__icon--pasta {
+
+}
+.category__icon--noodle {
+
+}
+.category__icon--salada {
+
+}
+.category__icon--soup {
+
+}
+.category__icon--bento {
+
+}
+.category__icon--hospitality {
+
+}
+.category__icon--sweets {
+
+}
+.category__icon--bread {
+
+}
