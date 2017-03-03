@@ -4,12 +4,14 @@
   li {
     a {
       display: block;
-      color: $DarkBrown;
       line-height: 35px;
       padding-left: 8px;
-    }
-    a:hover {
-      color: $Bordeaux;
+      &:hover {
+        color: $Bordeaux;
+      }
+      span:hover {
+        text-decoration: underline;
+      }
     }
     img {
       width: 24px;
@@ -34,7 +36,7 @@
     .p_service-menu__title {
       @include title_bar;
       @include border-top(#ded5c0);
-      img{
+      img {
         vertical-align: middle;
         height: 16px;
         width: 16px;
