@@ -81,6 +81,9 @@
           }
           img {
             border-radius: 5px;
+            &:hover {
+              opacity: 0.9;
+            }
           }
           .trend-recipe__list--title {
             font-size: 93%;
