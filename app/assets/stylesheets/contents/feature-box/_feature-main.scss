@@ -16,7 +16,7 @@
     }
     .pickup-title {
       margin-top: 10px;
-      .pickup-title__date {
+      &__date {
         float: left;
         font-size: 86%;
         border-radius: 4px;
@@ -31,15 +31,15 @@
           font-size: 129%;
         }
       }
-      .pickup-title__body {
+      &__body {
         font-size: 129%;
         margin-bottom: 3px;
         color: $DeepGreen;
         font-weight: bold;
-        .pickup-title__user {
-          color: $Gray;
-          padding-left: 4px;
-        }
+      }
+      &__user {
+        color: $Gray;
+        padding-left: 4px;
       }
     }
   }
@@ -55,7 +55,7 @@
         width: 100%;
         margin-bottom: 15px;
         float: none;
-        .news-top__article--image {
+        &__image {
           float: left;
           margin-right: 10px;
           img {
@@ -66,19 +66,19 @@
             }
           }
         }
-        .news-top__article {
+        &__article {
           overflow: hidden;
           margin-left: 5px;
-          .news-top__article--title {
+          &--title {
             font-size: 143%;
             font-weight: bold;
             color: $DarkBrown;
             margin-bottom: 10px;
+            &:hover {
+              color: $Bordeaux;
+            }
           }
-          .news-top__article--title:hover {
-            color: $Bordeaux;
-          }
-          .news-top__article--body {
+          &--body {
             font-size: 93%;
             line-height: 170%;
             color: $Gray;
@@ -118,13 +118,13 @@
         @include background('/images/icon_arrow.png');
         padding-left: 12px;
       }
-      .trend-list__top {
+      &__top {
         font-size: 129%;
         font-weight: bold;
         width: 100%;
         margin-bottom: 10px;
       }
-      .trend-list__topic {
+      &__topic {
         font-size: 93%;
         float: left;
         width: 50%;
