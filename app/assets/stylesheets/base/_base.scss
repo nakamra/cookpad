@@ -23,15 +23,8 @@ body {
 
 a {
   text-decoration: none;
+  color: $DarkBrown;
 }
-
-a:visited {
-    color: #845f4b;
-}
-
-// a:hover {
-//   text-decoration: underline;
-// }
 
 .f_left {
   float: left;
