@@ -1,6 +1,6 @@
 .recipe-box {
   border-top: 6px solid $DeepGreen;
-  height: 1600px;
+  height: 1080px;
   .recipe-box__title {
     background: url(/images/title_icon_recipe.png)15px 2px no-repeat;
     color: $DeepGreen;
@@ -17,6 +17,4 @@
   @import "ranking";
   @import "honor-recipe";
   @import "category";
-  @import "select-recipe";
-  @import "trend-kitchen";
 }
