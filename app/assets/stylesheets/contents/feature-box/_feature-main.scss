@@ -36,6 +36,9 @@
         margin-bottom: 3px;
         color: $DeepGreen;
         font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
       }
       &__user {
         color: $Gray;
@@ -76,6 +79,7 @@
             margin-bottom: 10px;
             &:hover {
               color: $Bordeaux;
+              text-decoration: underline;
             }
           }
           &--body {
@@ -93,6 +97,9 @@
         a {
           @include background('/images/icon_arrow.png');
           padding-left: 12px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
       .news-more-link {
@@ -117,6 +124,9 @@
       a {
         @include background('/images/icon_arrow.png');
         padding-left: 12px;
+        &:hover {
+          text-decoration: underline;
+        }
       }
       &__top {
         font-size: 129%;
