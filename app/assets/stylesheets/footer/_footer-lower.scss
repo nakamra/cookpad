@@ -2,7 +2,7 @@
   height: 350px;
   .lower-content {
     @extend .clearfix;
-    border-top: 1px solid #e8e2d6;
+    @include border-top($LightBrown);
     width: 640px;
     padding-top: 20px;
     float: left;
