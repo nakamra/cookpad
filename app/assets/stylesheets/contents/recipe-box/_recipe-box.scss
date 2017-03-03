@@ -2,7 +2,7 @@
   border-top: 6px solid $DeepGreen;
   height: 1080px;
   .recipe-box__title {
-    background: url(/images/title_icon_recipe.png)15px 2px no-repeat;
+    @include background($url: '/images/title_icon_recipe.png', $x: 15px, $y: 2px);
     color: $DeepGreen;
     padding-bottom: 5px;
     margin: 10px 0;
