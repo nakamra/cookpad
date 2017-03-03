@@ -3,12 +3,19 @@
   width: 169px;
   li {
     a {
-      color: #330000;
-      line-height: 33px;
-      padding-left: 15px;
+      display: block;
+      color: $DarkBrown;
+      line-height: 35px;
+      padding-left: 8px;
     }
     a:hover {
-      color: #663333;
+      color: $Bordeaux;
+    }
+    img {
+      width: 24px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 3px;
     }
   }
   .recipe-menu {
@@ -16,25 +23,29 @@
       @include title_bar;
       border-radius: 4px 0 0 0;
       a:visited {
-          color: #3c3c3c;
+          color: $LightBlack;
       }
     }
     .recipe-menu__list {
-      padding-bottom: 7px;
-
+      padding: 6px 0 7px 0;
     }
   }
   .p_service-menu {
     .p_service-menu__title {
       @include title_bar;
-      border-top: 1px solid #ded5c0;
+      @include border-top(#ded5c0);
+      img{
+        vertical-align: middle;
+        height: 16px;
+        width: 16px;
+      }
       a:visited {
-          color: #3c3c3c;
+          color: $LightBlack;
       }
     }
     .p_service-menu__list {
       height: 163px;
-      padding-bottom: 7px;
+      padding: 6px 0 7px 0;
     }
     .p_service-menu__more {
       padding: 0 10px 7px 0;
@@ -44,21 +55,20 @@
       text-align: right;
       a {
         text-decoration: underline;
-        color: #330000;
+        color: $DarkBrown;
       }
     }
   }
   .life_service-menu {
     .life_service-menu__title {
       @include title_bar;
-      border-top: 1px solid #ded5c0;
+      @include border-top(#ded5c0);
       a:visited {
-          color: #3c3c3c;
+          color: $LightBlack;
       }
     }
     .life_service-menu__list {
-      margin: 5px;
-      padding-bottom: 0;
+      padding-top: 6px;
     }
     .life_service-menu__more {
       padding: 0 10px 7px 0;
