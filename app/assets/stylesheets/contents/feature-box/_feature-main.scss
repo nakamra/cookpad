@@ -2,7 +2,7 @@
   float: right;
   width: 477px;
   min-height: 700px;
-  border-left: 1px solid #e8e2d6;
+  border-left: 1px solid $LightBrown;
   .feature-pickup {
     padding: 15px;
     .pickup-image {
@@ -18,7 +18,7 @@
         font-size: 86%;
         border-radius: 4px;
         background: $Orange;
-        color: #ffffff;
+        color: $White;
         font-weight: bold;
         width: 90px;
         margin-right: 10px;
@@ -33,10 +33,10 @@
         .pickup-title__body {
           font-size: 129%;
           margin-bottom: 3px;
-          color: #889b00;
+          color: $DeepGreen;
           font-weight: bold;
           .pickup-title__user {
-            color: #666666;
+            color: $Gray;
             padding-left: 4px;
           }
         }
@@ -46,7 +46,7 @@
   .feature-news {
     .news-title {
       @include title_bar;
-      border-top: 1px solid #e8e2d6;
+      @include border-top($LightBrown);
     }
     .news-list {
       padding: 15px 10px 0 15px;
@@ -72,16 +72,16 @@
           .news-top__article--title {
             font-size: 143%;
             font-weight: bold;
-            color: #330000;
+            color: $DarkBrown;
             margin-bottom: 10px;
           }
           .news-top__article--title:hover {
-            color: #663333;
+            color: $Bordeaux;
           }
           .news-top__article--body {
             font-size: 93%;
             line-height: 170%;
-            color: #666666;
+            color: $Gray;
           }
         }
       }
@@ -91,9 +91,8 @@
         width: 50%;
         margin-bottom: 6px;
         a {
-          background: url(/images/icon_arrow.png) 0 0 no-repeat;
+          @include background('/images/icon_arrow.png');
           padding-left: 12px;
-          color: #330000;
         }
       }
       .news-more-link {
@@ -103,7 +102,6 @@
         text-align: right;
         a {
           text-decoration: underline;
-          color: #330000;
         }
       }
     }
@@ -111,15 +109,14 @@
   .feature-trend {
     .trend-title {
       @include title_bar;
-      border-top: 1px solid #e8e2d6;
+      @include border-top($LightBrown);
     }
     .trend-list {
       @extend .clearfix;
       padding: 15px 10px 0 15px;
       a {
-        background: url(/images/icon_arrow.png) 0 0 no-repeat;
+        @include background('/images/icon_arrow.png');
         padding-left: 12px;
-        color: #330000;
       }
       .trend-list__top {
         font-size: 129%;
