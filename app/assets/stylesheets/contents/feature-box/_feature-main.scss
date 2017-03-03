@@ -7,8 +7,11 @@
     padding: 15px;
     .pickup-image {
       img {
-        vertical-align: middle;
         border-radius: 5px;
+        vertical-align: middle;
+        &:hover {
+          opacity: 0.9;
+        }
       }
     }
     .pickup-title {
@@ -28,17 +31,14 @@
           font-size: 129%;
         }
       }
-      #pickup-title {
-
-        .pickup-title__body {
-          font-size: 129%;
-          margin-bottom: 3px;
-          color: $DeepGreen;
-          font-weight: bold;
-          .pickup-title__user {
-            color: $Gray;
-            padding-left: 4px;
-          }
+      .pickup-title__body {
+        font-size: 129%;
+        margin-bottom: 3px;
+        color: $DeepGreen;
+        font-weight: bold;
+        .pickup-title__user {
+          color: $Gray;
+          padding-left: 4px;
         }
       }
     }
@@ -61,9 +61,9 @@
           img {
             border-radius: 5px;
             vertical-align: middle;
-          }
-          img:hover {
-            opacity: 0.9;
+            &:hover {
+              opacity: 0.9;
+            }
           }
         }
         .news-top__article {
