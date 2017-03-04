@@ -1,0 +1,20 @@
+.container
+  .title-form-container
+    .title-form-wrapper
+      .title-lane
+        .title-lane__main
+          レシピを書く
+        .title-lane__body
+          あなたの家の定番の味、工夫やアイデアをレシピとして記録しよう
+      = form_for @recipe, method: "post" do |f|
+        %h3.create-recipe__title
+          = f.label :name, "レシピのタイトル"
+          %span.notice
+            = f.label :name, "※あとから変更できます"
+        .notice
+          あと
+          %span 20
+          文字
+        = f.text_field :recipes, value: "", placeholder: "例：茄子とオクラの酢味噌和え", id: "recipe_title_field"
+        .create-recipe__submit
+          = f.submit "材料・作り方の入力に進む", id: "create_recipe_submit"
