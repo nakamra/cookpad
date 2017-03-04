@@ -1,0 +1,89 @@
+.title-form-container {
+  margin: 0 auto;
+  width: 650px;
+  background-color: $White;
+  border: 1px solid $Brown;
+  border-radius: 5px;
+  .title-form-wrapper {
+    width: 610px;
+    margin: 14px 20px;
+    .title-lane {
+      display: block;
+      position: relative;
+      .title-lane__main {
+        margin-bottom: 20px;
+        color: #2F1C12;
+        font-size: 138.5%;
+        font-weight: bold;
+        padding: 0px;
+        border-bottom: 1px solid #D6D7B9;
+      }
+      .title-lane__body {
+        color: #2F1c12;
+        font-size: 85%;
+        position: absolute;
+        top: 7px;
+        right: 0;
+      }
+    }
+    #new_recipe {
+      @extend .clearfix;
+      .create-recipe__title {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #2F1C12;
+        font-size: 108%;
+      }
+      .notice {
+        font-weight: normal;
+        font-size: 11px;
+        color: #666;
+      }
+      #recipe_title_field {
+        font-size: 172%;
+        width: 100%;
+      }
+      .create-recipe__submit {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        #create_recipe_submit {
+          // button 共通のCSS
+          padding: 8px 10px;
+          margin: 10px 0;
+          border: 1px solid #cccccc;
+          background: #ececec;
+          background: #ffffff;
+          background: -moz-linear-gradient(top, #ffffff, #ececec);
+          background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ececec));
+          background: linear-gradient(to bottom, #ffffff, #ececec);
+          border-radius: 5px;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+          display: inline-block;
+          font-family: inherit;
+          font-weight: bold;
+          min-width: 160px;
+          color: #3c3c3c;
+          text-align: center;
+          vertical-align: middle;
+          text-decoration: none !important;
+          text-shadow: 0 1px 0 #fff;
+          cursor: pointer;
+          -webkit-appearance: none;
+          font-size: 115%;
+
+          // create_recipe_submit固有のCSS
+          box-shadow: none;
+          cursor: default;
+          background-image: none;
+          background-color: #ececec;
+          color: #999999;
+          border: 1px solid lightgray;
+
+          // buttonがenableの時のCSS
+          background: linear-gradient(to bottom, #ffffff, #ececec);
+        }
+      }
+    }
+  }
+}
