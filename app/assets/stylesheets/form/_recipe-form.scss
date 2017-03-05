@@ -1,0 +1,32 @@
+.container {
+  .form-container {
+    .form-wrapper {
+      .recipe-top-bar {
+        .top-bar__link-user {}
+        .top-bar__destroy-link {}
+      }
+      .recipe-main {
+        .recipe-title {}
+        .recipe-image {}
+        .recipe-body {
+          .recipe-body__descriptions {}
+          .recipe-body__ingredients {}
+        }
+      }
+      .recipe-steps {}
+      .recipe-footer {}
+        .recipe-technic {
+          .recipe-technic__title {}
+          .recipe-technic__body {}
+        }
+        .recipe-story {
+          .recipe-story__title {}
+          .recipe-story__body {}
+        }
+      }
+      .recipe-status {
+
+      }
+    }
+  }
+}
