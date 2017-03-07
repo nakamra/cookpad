@@ -3,19 +3,26 @@
     .form-wrapper
       .recipe-top-bar
         .top-bar__link-user
+          snow hawkのレシピ
         .top-bar__destroy-link
+          削除
       .recipe-main
         .recipe-title
+          レンコンのはさみ揚げ
         .recipe-image
-        .recipe-body
-          .recipe-body__descriptions
-          .recipe-body__ingredients
+          = image_tag("/images/blank.png")
+        .recipe-ingredients
+          .ingredient-title
+            材料
+            %span
+            （2人分）
+          .ingredients-lists
+            .ingredient-row
+              .ingredient-row__name
+                %span.name ごま油
+              .ingredient-row__quantity 大さじ１
+            .ingredient-row
+              .ingredient-row__name
+                %span.name レンコン
+              .ingredient-row__quantity 200g
       .recipe-steps
-      .recipe-footer
-        .recipe-technic
-          .recipe-technic__title
-          .recipe-technic__body
-        .recipe-story
-          .recipe-story__title
-          .recipe-story__body
-      .recipe-status
