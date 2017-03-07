@@ -17,7 +17,7 @@
       }
       .category__body {
         overflow: hidden;
-        a.category__title {
+        .category__title {
           font-size: 115%;
           font-weight: bold;
           &:hover {
@@ -30,8 +30,8 @@
           li {
             margin-bottom: 2px;
             a {
-              padding-left: 12px;
               @include background('/images/icon_arrow.png');
+              padding-left: 12px;
               &:hover {
                 text-decoration: underline;
               }
