@@ -1,0 +1,30 @@
+.button {
+  padding: 8px 10px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  background: #ececec;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff, #ececec);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ececec));
+  background: linear-gradient(to bottom, #ffffff, #ececec);
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  font-family: inherit;
+  font-weight: bold;
+  min-width: 160px;
+  color: #3c3c3c;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none !important;
+  text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.button:hover {
+    border: 1px solid #c4c4c4;
+    background: -moz-linear-gradient(top, #f7f7f7, #e4e4e4);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e4e4e4));
+    background: linear-gradient(to bottom, #f7f7f7, #e4e4e4);
+}
