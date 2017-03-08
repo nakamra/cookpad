@@ -26,14 +26,16 @@
                 %span レンコン
               .ingredient-row__quantity 200g
       .recipe-steps
-        .step
-          %dl
-            %dt#step-head
-              %span.step-position 1
-            %dd
-              #step_photo.clickable_image_uploader
-                = image_tag("https://assets.cpcdn.com/assets/themes/recipe/step_blank.png?c36c8efecb31bebf8f7ef53a7fc4f24034c74677b0fdb521996e77d54b2962fa")
-              #step_text
-                %span
-                  = image_tag("/images/edit.gif")
-                  クリックして作り方を入力
+        - (1..4).each do |num|
+          .step{ class: ( "step_last" if num == 4 ) }
+            %dl
+              %dt#step-head
+                %span.step-position
+                  = num
+              %dd
+                #step_photo.clickable_image_uploader
+                  = image_tag("https://assets.cpcdn.com/assets/themes/recipe/step_blank.png?c36c8efecb31bebf8f7ef53a7fc4f24034c74677b0fdb521996e77d54b2962fa")
+                #step_text
+                  %span
+                    = image_tag("/images/edit.gif")
+                    クリックして作り方を入力
