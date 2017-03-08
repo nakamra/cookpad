@@ -1,21 +1,98 @@
 .recipe-top-bar {
-  .top-bar__link-user {}
-  .top-bar__destroy-link {}
-}
-.recipe-main {
-  .recipe-title {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  .top-bar__link-user {
+    float: left;
+    text-decoration: underline;
+    color: $DarkBrown;
   }
-  .recipe-image {}
+  .top-bar__destroy-link {
+    float: right;
+    color: $LightGray;
+  }
+}
+
+.recipe-main {
+  overflow: hidden;
+  .recipe-title {
+    @extend .clearfix;
+    color: $DeepGreen;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 480px;
+  }
+  .recipe-image {
+    @extend .clearfix;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 280px;
+    height: 383px;
+  }
   .recipe-ingredients {
-    .ingredient-title {
-      span {}
+    float: right;
+    width: 310px;
+    &:hover {
+      cursor: pointer;
+    }
+    .ingredient-title-bar {
+      border-bottom: 1px solid $FeatherGray;
+      .ingredient-title {
+        color: $YellowOrange;
+        font-size: 138%;
+        font-weight: bold;
+        margin-bottom: 5px;
+        span {
+          font-size: 12px;
+          font-weight: normal;
+          color: $DarkGray;
+        }
+      }
     }
     .ingredients-lists {
+      color: $DarkGray;
       .ingredient-row {
+        overflow: hidden;
+        padding: 1px 5px;
+        border-bottom: 1px solid $FeatherGray;
         &__name {
-          span.name {}
+          float: left;
+          display: inline;
+          font-size: 108%;
         }
-        &__quantity {}
+        &__quantity {
+          float: right;
+          display: inline;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.recipe-steps {
+  .step {
+    dl {
+      dt #step-head {
+        span .step-position {
+
+        }
+      }
+      dd {
+        #step_photo .clickable_image_uploader {
+          img {
+
+          }
+        }
+        #step_text {
+          span {
+            img {
+
+            }
+          }
+        }
       }
     }
   }
