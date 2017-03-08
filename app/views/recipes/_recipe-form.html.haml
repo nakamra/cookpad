@@ -3,7 +3,7 @@
     .form-wrapper
       .recipe-top-bar
         .top-bar__link-user
-          snow hawkのレシピ
+          «snow hawkのレシピ
         .top-bar__destroy-link
           削除
       .recipe-main
@@ -12,17 +12,28 @@
         .recipe-image
           = image_tag("/images/blank.png")
         .recipe-ingredients
-          .ingredient-title
-            材料
-            %span
-            （2人分）
+          .ingredient-title-bar
+            %h3.ingredient-title
+              材料
+              %span （２人分）
           .ingredients-lists
             .ingredient-row
               .ingredient-row__name
-                %span.name ごま油
+                %span ごま油
               .ingredient-row__quantity 大さじ１
             .ingredient-row
               .ingredient-row__name
-                %span.name レンコン
+                %span レンコン
               .ingredient-row__quantity 200g
       .recipe-steps
+        .step
+          %dl
+            %dt#step-head
+              %span.step-position 1
+            %dd
+              #step_photo.clickable_image_uploader
+                = image_tag("https://assets.cpcdn.com/assets/themes/recipe/step_blank.png?c36c8efecb31bebf8f7ef53a7fc4f24034c74677b0fdb521996e77d54b2962fa")
+              #step_text
+                %span
+                  = image_tag("/images/edit.gif")
+                  クリックして作り方を入力
