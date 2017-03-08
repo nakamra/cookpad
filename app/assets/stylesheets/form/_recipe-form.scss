@@ -73,27 +73,35 @@
 }
 
 .recipe-steps {
+  padding-bottom: 15px;
+  overflow: hidden;
   .step {
-    dl {
-      dt #step-head {
-        span .step-position {
-
-        }
-      }
-      dd {
-        #step_photo .clickable_image_uploader {
-          img {
-
-          }
-        }
-        #step_text {
-          span {
-            img {
-
-            }
-          }
+    float: left;
+    width: 136px;
+    margin: 20px 21px 10px 0;
+    #step-head {
+      color: $YellowOrange;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .clickable_image_uploader {
+      margin-bottom: 2px;
+      cursor: pointer;
+    }
+    #step_text {
+      cursor: pointer;
+      span {
+        color: #999;
+        font-size: 12px;
+        float: left;
+        img {
+          display: block;
+          float: left;
         }
       }
     }
+  }
+  .step_last {
+    margin-right: 0;
   }
 }
