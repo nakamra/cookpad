@@ -1,21 +1,22 @@
-.ingredients-modal
-  .recipe-ingredients
-    = form_for @recipe do |f|
-      .ingredients-title
-        材料
-        %span
-          2人分
-      .ingredients-table
-        .ingredients-table-header
-          .ingredients-table-head__name
-            材料・調味料
-          .ingredients-table-head__quantity
-            分量
-        .ingredients-table-liner
-          .ingredients-table-liner__name
-            = f.text_field :name
-          .ingredients-table-liner__quantity
-            = f.text_field :name
-        .ingredient-submit
-          = f.submit "保存して閉じる"
-  %button#modalClose
+.ingredients-modal-overlay
+.ingredients-modal-wrapper
+  .ingredients-box
+    .ingredients-content
+      .ingredients-edit
+        = form_for @recipe do |f|
+          .ingredients-title
+            材料
+            %span
+              2人分
+          .ingredients-table
+            .ingredients-table-head
+              .ingredients-table-head__name.table-head
+                材料・調味料
+              .ingredients-table-head__quantity.table-head
+                分量
+            .ingredients-table-liner
+              = f.text_field :name, class: "ingredients-table-liner__name text-field"
+              = f.text_field :name, class: "ingredients-table-liner__quantity text-field"
+            .ingredient-submit
+              = f.submit "保存して閉じる", id: "ingredient-submit", class: "button"
+    %button#modalClose close
