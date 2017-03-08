@@ -1,0 +1,21 @@
+.ingredients-modal {
+  .recipe-ingredients {
+    .new_recipe {
+      .ingredients-title {
+        %span {}
+      }
+      .ingredients-table {
+        .ingredients-table-header {
+          .ingredients-table-head__name {}
+          .ingredients-table-head__quantity {}
+        }
+        .ingredients-table-liner {
+          .ingredients-table-liner__name {}
+          .ingredients-table-liner__quantity {}
+        }
+        .ingredient-submit {}
+      }
+    }
+  }
+  %button#modalClose {}
+}
