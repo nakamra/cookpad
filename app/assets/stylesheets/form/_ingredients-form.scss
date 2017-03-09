@@ -1,6 +1,6 @@
-.ingredients-modal-overlay {
+#ingredients-modal-overlay {
   opacity: 0.4;
-  visibility: hidden;
+  display: none;
   background: #000;
   height: 100%;
   width: 100%;
@@ -9,9 +9,8 @@
   top: 0;
   left: 0;
 }
-.ingredients-modal-wrapper {
-  display: block;
-  visibility: hidden;
+#ingredients-modal-wrapper {
+  display: none;
   position: fixed;
   top: 21%;
   left: 38%;
@@ -73,7 +72,6 @@
               padding: 4px;
             }
             .ingredients-table-liner__name {
-              margin-top: 5px 5px 0 0;
               width: 190px;
               float: left;
               background: url(/images/input_back_yellow.png) no-repeat;
