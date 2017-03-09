@@ -44,7 +44,7 @@
           clear: both;
           .ingredients-table-head {
             margin: 5px 0 5px 35px;
-            color: #633;
+            color: $Bordeaux;
             font-weight: bold;
             .table-head {
               border-radius: 5px;
@@ -67,7 +67,7 @@
             height: 43px;
             .text-field {
               border: 1px solid;
-              border-color: #d6d2b7 #f3eecf #f3eecf #d6d2b7;
+              border-color: $YellowGray $YellowWhite $YellowWhite $YellowGray;
               background: url(/images/input_back.png) no-repeat;
               padding: 4px;
             }
@@ -83,7 +83,7 @@
           }
           .ingredient-submit {
             text-align: center;
-            border-top: solid 1px #faf3e3;
+            border-top: solid 1px $Cream;
             margin: 8px 0 0 0;
             padding-top: 8px;
             #ingredient-submit {
