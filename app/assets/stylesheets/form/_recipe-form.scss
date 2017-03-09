@@ -79,7 +79,7 @@
     float: left;
     width: 136px;
     margin: 20px 21px 10px 0;
-    #step-head {
+    .step-head {
       color: $YellowOrange;
       font-size: 18px;
       font-weight: bold;
@@ -88,7 +88,8 @@
       margin-bottom: 2px;
       cursor: pointer;
     }
-    #step_text {
+    .step-text {
+
       cursor: pointer;
       span {
         color: $LightGray;
