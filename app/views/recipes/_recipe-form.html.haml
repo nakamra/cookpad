@@ -36,6 +36,16 @@
                 .clickable_image_uploader{ id: "step_photo_#{num}" }
                   = image_tag("https://assets.cpcdn.com/assets/themes/recipe/step_blank.png?c36c8efecb31bebf8f7ef53a7fc4f24034c74677b0fdb521996e77d54b2962fa")
                 .step-text{ id: "step_text_#{num}" }
-                  %span
-                    = image_tag("/images/edit.gif")
-                    クリックして作り方を入力
+                  .step-text__field{ id: "step_text__field_#{num}" }
+                    %span.step-text__field--empty{ id: "text_empty_#{num}", data: { step_id: "#{num}"} }
+                      = image_tag("/images/edit.gif")
+                      クリックして作り方を入力
+                    .step-text__form{ id: "text_form_#{num}", data: { step_id: "#{num}" } }
+                      = form_for @recipe do |f|
+                        %p#text-size-limit-container
+                          %span#text-size-limit 60
+                          文字まで
+                        = f.text_area :name, class: "step-textarea", size: "12x7"
+                        %br
+                        = f.submit "保存", class: "step-text-submit"
+                        %a.step-text-cancel 取消
