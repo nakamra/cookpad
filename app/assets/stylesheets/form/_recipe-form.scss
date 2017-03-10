@@ -37,38 +37,7 @@
     &:hover {
       cursor: pointer;
     }
-    .ingredient-title-bar {
-      border-bottom: 1px solid $FeatherGray;
-      .ingredient-title {
-        color: $YellowOrange;
-        font-size: 138%;
-        font-weight: bold;
-        margin-bottom: 5px;
-        span {
-          font-size: 12px;
-          font-weight: normal;
-          color: $DarkGray;
-        }
-      }
-    }
-    .ingredients-lists {
-      color: $DarkGray;
-      .ingredient-row {
-        overflow: hidden;
-        padding: 1px 5px;
-        border-bottom: 1px solid $FeatherGray;
-        &__name {
-          float: left;
-          display: inline;
-          font-size: 108%;
-        }
-        &__quantity {
-          float: right;
-          display: inline;
-          margin-left: 10px;
-        }
-      }
-    }
+    @import "form/ingredients-lists";
   }
 }
 
@@ -79,10 +48,15 @@
     float: left;
     width: 136px;
     margin: 20px 21px 10px 0;
-    .step-head {
+    .step-position {
       color: $YellowOrange;
       font-size: 18px;
       font-weight: bold;
+      h3 {
+        font-size: 110%;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
     }
     .clickable_image_uploader {
       margin-bottom: 2px;
@@ -143,4 +117,18 @@
   .step_last {
     margin-right: 0;
   }
+}
+
+.recipe-photo {
+  @extend .clearfix;
+  float: left;
+  margin-right: 10px;
+  width: 280px;
+  height: 383px;
+}
+
+#recipe-ingredients-show {
+  float: right;
+  width: 310px;
+  @import "form/ingredients-lists";
 }
