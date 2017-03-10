@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  before_action :set_default_value, only: [:new, :index, :post]
+  before_action :set_default_value
 
   def new
   end
@@ -8,6 +8,9 @@ class RecipesController < ApplicationController
   end
 
   def post
+  end
+
+  def show
   end
 
   private
