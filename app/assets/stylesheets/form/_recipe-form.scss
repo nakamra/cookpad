@@ -89,15 +89,53 @@
       cursor: pointer;
     }
     .step-text {
-
-      cursor: pointer;
-      span {
+      &__field--empty {
+        display: block;
         color: $LightGray;
         font-size: 12px;
         float: left;
+        cursor: pointer;
         img {
           display: block;
           float: left;
+        }
+      }
+      .step-text__form {
+        display: none;
+        .new_recipe {
+          font-weight: normal;
+          font-size: 14px;
+          #text-size-limit-container {
+            color: $Gray;
+            font-size: 11px;
+            #text-size-limit {
+              font-size: 12px;
+            }
+          }
+          .step-textarea {
+            font-size: 95%;
+            width: 130px;
+            height: 100px;
+            line-height: 140%;
+            padding: 0;
+            overflow: auto;
+            border: 1px solid #cccccc;
+            border-top: 1px solid #666;
+            border-left: 1px solid #666;
+            background: #ffffd3;
+            vertical-align: middle;
+            border-radius: 3px;
+            resize: none;
+          }
+          .step-text-submit {
+            font-size: 11px;
+            padding: 0 10px;
+            line-height: 13.5px;
+          }
+          .step-text-cancel {
+            cursor: pointer;
+            text-decoration: underline;
+          }
         }
       }
     }
