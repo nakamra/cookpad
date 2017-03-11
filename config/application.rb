@@ -12,8 +12,9 @@ module Cookpad
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.generators do |g|
-      g.javascripts false
-      g.stylesheets false
+      g.helper false
+      g.assets false
+      g.test_framework false
       g.template_engine :haml
     end
   end
