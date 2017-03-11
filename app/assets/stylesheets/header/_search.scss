@@ -1,0 +1,70 @@
+.search {
+  float: left;
+  margin-left: 276px;
+  margin-top: 14px;
+  .search-form {
+    #new_recipe {
+      height: 32px;
+      line-height: 18px;
+      position: relative;
+      #recipe_name {
+        background: #ffffff url(/images/icon_header_search.png)7px 50% no-repeat;
+        float: left;
+        height: 100%;
+        width: 210px;
+        padding: 6px 0 6px 5px;
+        padding-left: 27px;
+        font-size: 86%;
+      }
+      .search-form__cross {
+        float: left;
+        margin: 6px 4px 0 0;
+      }
+
+      .search-form__purpose #purpose {
+        float: left;
+        height: 100%;
+        width: 90px;
+        padding: 6px 0 6px 5px;
+        font-size: 86%;
+        margin-right: 3px;
+      }
+
+      .search-form__submit-btn {
+        display: inline-block;
+
+        #submit-button{
+          height: 32px;
+          border: 1px solid #cccccc;
+          border-radius: 3px;
+          background: linear-gradient(to bottom, #ffffff, #ececec);
+          padding: 0px 7px;
+          color: #3c3c3c;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .search-keyword {
+    float: left;
+    max-width: 370px;
+    font-size: 93%;
+    letter-spacing: -0.3px;
+    &__list {
+      @extend .clearfix;
+      font-size: 86%;
+      padding-top: 6px;
+      li {
+        float: left;
+        a {
+          color: #4d2200;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+  .search-keyword__more--link img {
+    margin-top: 5px;
+  }
+}

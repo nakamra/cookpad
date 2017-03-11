@@ -1,0 +1,84 @@
+.category {
+  height: 100%;
+  .category-title {
+    @include title_bar;
+    @include border-top($LightBrown);
+  }
+  .category-top {
+    @extend .clearfix;
+    .left-container {
+      float: left;
+      width: 50%;
+      .inner-container {
+        padding: 15px 15px 5px 15px;
+        a:hover {
+          opacity: 0.9;
+        }
+        .category-top__image {
+          float: left;
+          margin-right: 10px;
+          width: 80px;
+          height: 80px;
+          img {
+            vertical-align: middle;
+            border-radius: 5px;
+          }
+        }
+        .category-top__recipe {
+          overflow: hidden;
+          @extend .clearfix;
+          .category-top__recipe-title {
+            font-size: 115%;
+            font-weight: bold;
+            margin-bottom: 3px;
+          }
+          .category-top__recipe-title:hover {
+            text-decoration: underline;
+          }
+          .category-top__recipe-body {
+            font-size: 86%;
+            color: $LightGray;
+          }
+        }
+      }
+    }
+    .right-container {
+      float: right;
+      width: 50%;
+      .inner-container {
+        padding: 15px 15px 5px 15px;
+        a:hover {
+          opacity: 0.9;
+        }
+        .category-top__image {
+          float: left;
+          margin-right: 10px;
+          width: 80px;
+          height: 80px;
+          img {
+            vertical-align: middle;
+            border-radius: 5px;
+          }
+        }
+        .category-top__recipe {
+          overflow: hidden;
+          @extend .clearfix;
+          .category-top__recipe-title {
+            font-size: 115%;
+            font-weight: bold;
+            margin-bottom: 3px;
+          }
+          .category-top__recipe-title:hover {
+            text-decoration: underline;
+          }
+          .category-top__recipe-body {
+            font-size: 86%;
+            color: $LightGray;
+          }
+        }
+      }
+    }
+  }
+  @import "category-list";
+  .category__more {}
+}

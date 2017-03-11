@@ -1,0 +1,30 @@
+.container
+  .form-container
+    .form-wrapper
+      .recipe-main
+        .recipe-title
+          レンコンのはさみ揚げ
+        .recipe-photo
+          = image_tag("")
+        #recipe-ingredients-show
+          .ingredient-title-bar
+            %h3.ingredient-title
+              材料
+              %span （２人分）
+          .ingredients-lists
+            .ingredient-row
+              .ingredient-row__name
+                %span ごま油
+              .ingredient-row__quantity 大さじ１
+            .ingredient-row
+              .ingredient-row__name
+                %span レンコン
+              .ingredient-row__quantity 200g
+      .recipe-steps
+        - (1..4).each do |num|
+          .step{ class: ( "step_last" if num == 4 ) }
+            %dl
+              %dt.step-head{ id: "step_head_#{num}" }
+                %span.step-position{ id: "step_position_#{num}" }
+                  %h3
+                    = num

@@ -1,0 +1,114 @@
+#ingredients-modal-overlay {
+  opacity: 0.4;
+  display: none;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+}
+#ingredients-modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 21%;
+  left: 38%;
+  width: 460px;
+  height: 590px;
+  z-index: 9999;
+  .ingredients-box {
+    width: 460px;
+    height: 570px;
+    margin-top: 20px;
+    position: relative;
+    .ingredients-content {
+      width: 450px;
+      height: 560px;
+      overflow: auto;
+      background: $White none repeat scroll 0% 0%;
+      border: 5px solid #e3dcca;
+      border-radius: 5px;
+      .ingredients-edit {
+        margin: 10px;
+        overflow: hidden;
+        .ingredients-title {
+          overflow: hidden;
+          float: left;
+          width: 120px;
+          margin: 5px 0 10px 0;
+          padding: 4px;
+          color: $LightBlack;
+        }
+        .ingredients-table {
+          clear: both;
+          .ingredients-table-head {
+            margin: 5px 0 5px 35px;
+            color: $Bordeaux;
+            font-weight: bold;
+            .table-head {
+              border-radius: 5px;
+              background: #f7f3e8;
+              text-align: center;
+              height: 22px;
+              padding-top: 4px;
+              display: inline-block;
+            }
+            &__name {
+              width: 190px;
+            }
+            &__quantity {
+              width: 135px;
+            }
+          }
+          .ingredients-table-liner {
+            margin-left: 35px;
+            border-radius: 5px;
+            height: 43px;
+            .text-field {
+              border: 1px solid;
+              border-color: $YellowGray $YellowWhite $YellowWhite $YellowGray;
+              background: url(/images/input_back.png) no-repeat;
+              padding: 4px;
+            }
+            .ingredients-table-liner__name {
+              width: 190px;
+              float: left;
+              background: url(/images/input_back_yellow.png) no-repeat;
+            }
+            .ingredients-table-liner__quantity {
+              width: 135px;
+              float: left;
+            }
+          }
+          .ingredient-submit {
+            text-align: center;
+            border-top: solid 1px $Cream;
+            margin: 8px 0 0 0;
+            padding-top: 8px;
+            #ingredient-submit {
+              padding: 7px 15px;
+              margin: 3px 0 10px 0;
+              min-width: 60px;
+              border-radius: 3px;
+              font-size: 86%;
+            }
+          }
+        }
+      }
+    }
+    button#modalClose {
+      position: absolute;
+      top: -14px;
+      right: -14px;
+      display: block;
+      background: url(/images/close.png) no-repeat top center;
+      width: 34px;
+      height: 34px;
+      text-indent: -9999px;
+      float: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.honor-recipe {
+  .honor-recipe__title {
+    @include title_bar;
+    @include border-top($LightBrown);
+    img {
+      vertical-align: middle;
+      height: 16px;
+      width: 16px;
+    }
+  }
+  .honor-recipe__container {
+    width: 628px;
+    margin: 0 10px;
+    padding: 10px 0;
+    font-weight: normal;
+    a {
+      @extend .clearfix;
+      .honor-recipe__text {
+        float: left;
+        line-height: 72px;
+        font-size: 115%;
+        font-weight: bold;
+        .honor-recipe__text--left {
+          color: #ff6600;;
+        }
+        .honor-recipe__text--right {
+          color: #330000;
+        }
+        .honor-recipe__text--right:hover {
+          text-decoration: underline;
+        }
+      }
+      .honor-recipe_images {
+        float: right;
+        width: 216px;
+        img {
+          float: left;
+          border: 0;
+          vertical-align: middle;
+          display:block
+        }
+        :first-child {
+          border-radius: 5px 0 0 5px;
+        }
+        :last-child {
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+  }
+}

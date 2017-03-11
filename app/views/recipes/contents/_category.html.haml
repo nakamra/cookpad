@@ -1,0 +1,26 @@
+.category
+  .category-title
+    %a{:href => "/"} レシピカテゴリ
+  .category-top
+    .left-container
+      .inner-container
+        %a{:href => "/"}
+          .category-top__image
+            = image_tag ("https://img.cpcdn.com/search_categories/212/80x80c/03faeb82d7fd6bf1c8d0535bbebfb4d6.jpg?p=1215723894")
+          .category-top__recipe
+            .category-top__recipe-title
+              まるでケーキ♫デコレーション寿司
+            .category-top__recipe-body
+              ひなまつりパーティにぴったりの華やかなお寿司
+    .right-container
+      .inner-container
+        %a{:href => "/"}
+          .category-top__image
+            = image_tag ("https://img.cpcdn.com/search_categories/135/80x80c/d9cea8f157f7936a6f7de101e6fca231.jpg?p=1215717953")
+          .category-top__recipe
+            .category-top__recipe-title
+              だしが決め手！お吸い物レシピ
+            .category-top__recipe-body
+              ハマグリのお吸い物はひなまつりの定番。お吸い物の作り方はこちらで確認。
+  = render "recipes/contents/category-list"
+  .category__more

@@ -1,0 +1,20 @@
+.recipe-box {
+  border-top: 6px solid $DeepGreen;
+  height: 1080px;
+  .recipe-box__title {
+    @include background($url: '/images/title_icon_recipe.png', $x: 15px, $y: 2px);
+    color: $DeepGreen;
+    padding-bottom: 5px;
+    margin: 10px 0;
+    position: relative;
+    font-size: 158%;
+    border-bottom: 1px solid $LightBrown;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-left: 50px;
+    padding-bottom: 8px;
+  }
+  @import "ranking";
+  @import "honor-recipe";
+  @import "category";
+}

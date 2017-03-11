@@ -1,0 +1,19 @@
+.recipe-box.box
+  .recipe-box__title レシピ
+  = render "recipes/contents/ranking"
+  .honor-recipe
+    .honor-recipe__title
+      = image_tag("/images/icon_ps_large.png")
+      %a{:href => "/"} 殿堂入りレシピ
+    .honor-recipe__container
+      %a{:href => "/"}
+        .honor-recipe__text
+          %span.honor-recipe__text--left
+            つくれぽ1000人以上！
+          %span.honor-recipe__text--right
+            殿堂入り お菓子 208品
+        .honor-recipe_images
+          = image_tag("https://img.cpcdn.com/recipes/_o1jadh2/72x72c/e88857f3df0b7ca84e39252ac299ad2a.jpg")
+          = image_tag("https://img.cpcdn.com/recipes/_o1j14017/72x72c/9d6f5f5372aa6e9293ea80a5f57fd1c0.jpg")
+          = image_tag("https://img.cpcdn.com/recipes/_o1caba16/72x72c/188ee5b9345bead023f66c694222af48.jpg")
+  = render "recipes/contents/category"

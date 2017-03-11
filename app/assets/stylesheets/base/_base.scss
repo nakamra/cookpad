@@ -12,31 +12,24 @@ body {
   font-size: 87.5%;
 }
 
-.clearfix:after {
-    content: " ";
-    display: block;
+.clearfix {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: table;
     clear: both;
-}
-
-.wrapper {
-  height: 100%;
-}
-
-.container {
-  height: 100%;
-  margin: 0 auto;
-  text-align: left;
-  width: 970px;
+  }
 }
 
 a {
   text-decoration: none;
+  color: $DarkBrown;
 }
 
-a:visited {
-    color: #845f4b;
+.f_left {
+  float: left;
 }
 
-a:hover {
-  text-decoration: underline;
+.f_right {
+  float: right;
 }

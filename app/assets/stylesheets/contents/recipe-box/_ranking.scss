@@ -1,0 +1,118 @@
+.ranking {
+  .ranking-box {
+    float: left;
+    min-height: 284px;
+    max-height: 318px;
+    width: 323px;
+    .ranking-box__title {
+      @include title_bar;
+      img{
+        vertical-align: middle;
+        height: 16px;
+        width: 16px;
+      }
+    }
+    .ranking-box__list {
+      padding: 10px 10px 0 10px;
+      height: 208px;
+      img:hover {
+        opacity: 0.9;
+      }
+      .first-recipe {
+        width: 198px;
+        height: 198px;
+        margin: 0 10px 10px 0;
+        position: relative;
+        float: left;
+        .first-recipe__crown {
+          @include crown;
+        }
+      }
+      .recipe {
+        float: left;
+        height: auto;
+        position: relative;
+        margin-bottom: 10px;
+        .recipe__crown {
+          @include crown;
+        }
+      }
+      .recipe__image {
+        vertical-align: middle;
+        border-radius: 5px;
+        z-index: 0;
+      }
+    }
+    .ranking-box__popular-link {
+      text-align: center;
+      padding-bottom: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
+      .focus-text {
+        color: $Chocolate;
+        font-weight: bold;
+        .font18 {
+          font-size: 129%;
+        }
+      }
+    }
+  }
+  .trend-recipe-box {
+    float: right;
+    min-height: 284px;
+    max-height: 318px;
+    width: 50%;
+    border-left: 1px solid #e8e2d6;
+    .trend-recipe-box__title {
+      @include title_bar;
+    }
+    .trend-recipe-container {
+      height: 246px;
+      ul {
+        padding: 10px 10px 0 10px;
+        .trend-recipe__list {
+          float: left;
+          width: 94px;
+          height: 206px;
+          margin-right: 10px;
+          a {
+            text-decoration-color: $DeepGreen;
+          }
+          img {
+            border-radius: 5px;
+            &:hover {
+              opacity: 0.9;
+            }
+          }
+          .trend-recipe__list--title {
+            font-size: 93%;
+            color: $DeepGreen;
+            font-weight: bold;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          .trend-recipe__list--user-name {
+            font-size: 79%;
+            color: $LightGray;
+          }
+        }
+        .trend-recipe__last {
+          @extend .trend-recipe__list;
+          margin-right: 0;
+        }
+      }
+      .trend-recipe__more-link {
+        padding: 2px 10px 10px 0;
+        text-align: right;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 86%;
+        a {
+          color: $DarkBrown;
+        }
+      }
+    }
+  }
+}

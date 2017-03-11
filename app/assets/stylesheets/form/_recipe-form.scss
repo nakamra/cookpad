@@ -1,0 +1,134 @@
+.recipe-top-bar {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  .top-bar__link-user {
+    float: left;
+    text-decoration: underline;
+    color: $DarkBrown;
+  }
+  .top-bar__destroy-link {
+    float: right;
+    color: $LightGray;
+  }
+}
+
+.recipe-main {
+  overflow: hidden;
+  .recipe-title {
+    @extend .clearfix;
+    color: $DeepGreen;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 480px;
+  }
+  .recipe-image {
+    @extend .clearfix;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 280px;
+    height: 383px;
+  }
+  #recipe-ingredients {
+    float: right;
+    width: 310px;
+    &:hover {
+      cursor: pointer;
+    }
+    @import "form/ingredients-lists";
+  }
+}
+
+.recipe-steps {
+  padding-bottom: 15px;
+  overflow: hidden;
+  .step {
+    float: left;
+    width: 136px;
+    margin: 20px 21px 10px 0;
+    .step-position {
+      color: $YellowOrange;
+      font-size: 18px;
+      font-weight: bold;
+      h3 {
+        font-size: 110%;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    }
+    .clickable_image_uploader {
+      margin-bottom: 2px;
+      cursor: pointer;
+    }
+    .step-text {
+      &__field--empty {
+        display: block;
+        color: $LightGray;
+        font-size: 12px;
+        float: left;
+        cursor: pointer;
+        img {
+          display: block;
+          float: left;
+        }
+      }
+      .step-text__form {
+        display: none;
+        .new_recipe {
+          font-weight: normal;
+          font-size: 14px;
+          #text-size-limit-container {
+            color: $Gray;
+            font-size: 11px;
+            #text-size-limit {
+              font-size: 12px;
+            }
+          }
+          .step-textarea {
+            font-size: 95%;
+            width: 130px;
+            height: 100px;
+            line-height: 140%;
+            padding: 0;
+            overflow: auto;
+            border: 1px solid #cccccc;
+            border-top: 1px solid #666;
+            border-left: 1px solid #666;
+            background: #ffffd3;
+            vertical-align: middle;
+            border-radius: 3px;
+            resize: none;
+          }
+          .step-text-submit {
+            font-size: 11px;
+            padding: 0 10px;
+            line-height: 13.5px;
+          }
+          .step-text-cancel {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .step_last {
+    margin-right: 0;
+  }
+}
+
+.recipe-photo {
+  @extend .clearfix;
+  float: left;
+  margin-right: 10px;
+  width: 280px;
+  height: 383px;
+}
+
+#recipe-ingredients-show {
+  float: right;
+  width: 310px;
+  @import "form/ingredients-lists";
+}

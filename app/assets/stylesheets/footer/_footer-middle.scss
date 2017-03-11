@@ -1,0 +1,28 @@
+.footer-middle {
+  height: 395px;
+  text-align: left;
+
+  .middle-1, .middle-2, .middle-3, .middle-4, .middle-5 {
+    width: 20%;
+    float: left;
+  }
+
+  .title{
+  font-size: 93%;
+  margin-top: 20px;
+  font-weight: bold;
+  position: relative;
+  color: #4d2200;
+  }
+
+  li {
+    font-size: 86%;
+    padding-bottom: 4px;
+    a {
+      color: #755353;
+      text-decoration: underline;
+    }
+
+  }
+
+}

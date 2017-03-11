@@ -1,3 +1,17 @@
-@import "reset";
-@import "base";
-@import "global-header";
+@import "base/yui_reset";
+@import "base/color";
+@import "base/base";
+
+@import "modules/boxes";
+@import "modules/forms";
+@import "modules/button";
+@import "modules/mixin";
+
+@import "global-header/global-header";
+@import "header/header";
+@import "contents/contents";
+@import "footer/footer";
+
+@import "form/title-form";
+@import "form/recipe-form";
+@import "form/ingredients-form"

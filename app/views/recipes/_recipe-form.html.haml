@@ -1,0 +1,51 @@
+.container
+  .form-container
+    .form-wrapper
+      .recipe-top-bar
+        .top-bar__link-user
+          «snow hawkのレシピ
+        .top-bar__destroy-link
+          削除
+      .recipe-main
+        .recipe-title
+          レンコンのはさみ揚げ
+        .recipe-image
+          = image_tag("/images/blank.png")
+        #recipe-ingredients
+          .ingredient-title-bar
+            %h3.ingredient-title
+              材料
+              %span （２人分）
+          .ingredients-lists
+            .ingredient-row
+              .ingredient-row__name
+                %span ごま油
+              .ingredient-row__quantity 大さじ１
+            .ingredient-row
+              .ingredient-row__name
+                %span レンコン
+              .ingredient-row__quantity 200g
+      .recipe-steps
+        - (1..4).each do |num|
+          .step{ class: ( "step_last" if num == 4 ) }
+            %dl
+              %dt.step-head{ id: "step_head_#{num}" }
+                %span.step-position{ id: "step_position_#{num}" }
+                  = num
+              %dd
+                .clickable_image_uploader{ id: "step_photo_#{num}" }
+                  = image_tag("https://assets.cpcdn.com/assets/themes/recipe/step_blank.png?c36c8efecb31bebf8f7ef53a7fc4f24034c74677b0fdb521996e77d54b2962fa")
+                .step-text{ id: "step_text_#{num}" }
+                  .step-text__field{ id: "step_text__field_#{num}" }
+                    %span.step-text__field--empty{ id: "text_empty_#{num}", data: { step_id: "#{num}"} }
+                      = image_tag("/images/edit.gif")
+                      クリックして作り方を入力
+                    .step-text__form{ id: "text_form_#{num}", data: { step_id: "#{num}" } }
+                      = form_for @recipe do |f|
+                        %p#text-size-limit-container
+                          %span#text-size-limit 60
+                          文字まで
+                        = f.text_area :name, class: "step-textarea", size: "12x7"
+                        %br
+                        = f.submit "保存", class: "step-text-submit"
+                        %a.step-text-cancel 取消

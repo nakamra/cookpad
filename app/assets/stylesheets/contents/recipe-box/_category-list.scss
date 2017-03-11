@@ -1,0 +1,81 @@
+.category-list {
+  padding: 10px 0 0 15px;
+  ul {
+    @extend .clearfix;
+    .category__box {
+      float: left;
+      width: 33%;
+      margin-bottom: 25px;
+      .category__icon {
+        float: left;
+        margin-right: 10px;
+        a {
+          display: block;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .category__body {
+        overflow: hidden;
+        .category__title {
+          font-size: 115%;
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .sub-category-list {
+          font-size: 86%;
+          margin-top: 5px;
+          li {
+            margin-bottom: 2px;
+            a {
+              @include background('/images/icon_arrow.png');
+              padding-left: 12px;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.category__icon--vege {
+  @include background;
+}
+.category__icon--meat {
+  @include background($y: -46px);
+}
+.category__icon--fish {
+  @include background($y: -83px);
+}
+.category__icon--rice {
+  @include background($y: -126px);
+}
+.category__icon--pasta {
+  @include background($y: -170px);
+}
+.category__icon--noodle {
+  @include background($y: -210px);
+}
+.category__icon--salada {
+  @include background($y: -253px);
+}
+.category__icon--soup {
+  @include background($y: -296px);
+}
+.category__icon--bento {
+  @include background($y: -335px);
+}
+.category__icon--hospitality {
+  @include background($y: -375px);
+}
+.category__icon--sweets {
+  @include background($y: -461px);
+}
+.category__icon--bread {
+  @include background($y: -420px);
+}

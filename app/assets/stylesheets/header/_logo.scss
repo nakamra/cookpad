@@ -1,0 +1,30 @@
+.logo {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  &__cookpad{
+    margin: 14px 12px 0 0;
+    vertical-align: middle;
+  }
+  &__recipe {
+    position: absolute;
+    top: 29px;
+    right: auto;
+    bottom: 13.2px;
+    left: 206px;
+    text-align: center;
+    width: 50px;
+    letter-spacing: -1px;
+    .logo__recipe__body {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      color: $Orange;
+      line-height: 0.8;
+      span.small {
+        font-size: 10px;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
