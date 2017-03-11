@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170225045555) do
+ActiveRecord::Schema.define(version: 20170311070413) do
+
+  create_table "ingredients", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "quantity"
+    t.integer  "recipe_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_ingredients_on_name", using: :btree
+    t.index ["quantity"], name: "index_ingredients_on_quantity", using: :btree
+    t.index ["recipe_id"], name: "index_ingredients_on_recipe_id", using: :btree
+  end
 
   create_table "recipes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                     null: false
@@ -18,6 +29,20 @@ ActiveRecord::Schema.define(version: 20170225045555) do
     t.text     "copy",       limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.integer  "user_id"
+    t.index ["user_id", "name"], name: "index_recipes_on_user_id_and_name", unique: true, using: :btree
+    t.index ["user_id"], name: "index_recipes_on_user_id", using: :btree
   end
 
+  create_table "steps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "body",                 limit: 60
+    t.string   "image"
+    t.integer  "step_position_number",            null: false
+    t.integer  "recipe_id"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.index ["recipe_id"], name: "index_steps_on_recipe_id", using: :btree
+  end
+
+  add_foreign_key "steps", "recipes"
 end
