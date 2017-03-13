@@ -21,11 +21,11 @@ Database Design
 
 ### ingredients table
 
-| column    | type    | key                               |
-|:---------:|:-------:|:---------------------------------:|
-| name      | string  | add_index :ingredients, :name     |
-| quantity  | string  | add_index :ingredients, :quantity |
-| recipe_id | integer | t.references :recipe              |
+| column    | type    | key                                     |
+|:---------:|:-------:|:---------------------------------------:|
+| name      | string  | add_index :ingredients, :name           |
+| quantity  | string  | add_index :ingredients, :quantity       |
+| recipe_id | integer | t.references :recipe, foreign_key: true |
 
 ### kitchens(users) table
 
