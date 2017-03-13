@@ -2,6 +2,8 @@ class DeviseCreateKitchens < ActiveRecord::Migration[5.0]
   def change
     create_table :kitchens do |t|
       ## Database authenticatable
+      t.string :nickname, null:false, default: ""
+      t.string :thumbnail
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
@@ -33,9 +35,9 @@ class DeviseCreateKitchens < ActiveRecord::Migration[5.0]
 
       t.timestamps null: false
     end
-
+    add_index :kitchens, :nickname,             unique: true
     add_index :kitchens, :email,                unique: true
-    add_index :kitchens, :reset_password_token, unique: true
+    
     # add_index :kitchens, :confirmation_token,   unique: true
     # add_index :kitchens, :unlock_token,         unique: true
   end
