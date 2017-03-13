@@ -2,13 +2,13 @@ Database Design
 -
 ### recipes table
 
-| column  | type    | key                                                  |
-|:-------:|:-------:|:----------------------------------------------------:|
-| name    | string  | null: false                                          |
-| picture | string  |                                                      |
-| copy    | text    |                                                      |
-| user_id | integer | t.references :user, foreign_key: true                |
-|         |         | add_index :recipes,  [:user_id, :name], unique: true |
+| column     | type    | key                                                  |
+|:----------:|:-------:|:----------------------------------------------------:|
+| name       | string  | null: false                                          |
+| picture    | string  |                                                      |
+| copy       | text    |                                                      |
+| kitchen_id | integer | t.references :kitchen, foreign_key: true                |
+|            |         | add_index :recipes,  [:user_id, :name], unique: true |
 
 ### steps table
 
@@ -27,7 +27,7 @@ Database Design
 | quantity  | string  | add_index :ingredients, :quantity |
 | recipe_id | integer | t.references :recipe              |
 
-### users table
+### kitchens(users) table
 
 | column    | type   | key                                                    |
 |:---------:|:------:|:------------------------------------------------------:|
