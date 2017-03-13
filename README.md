@@ -7,7 +7,7 @@ Database Design
 | name       | string  | null: false                                          |
 | picture    | string  |                                                      |
 | copy       | text    |                                                      |
-| kitchen_id | integer | t.references :kitchen, foreign_key: true                |
+| kitchen_id | integer | t.references :kitchen, foreign_key: true             |
 |            |         | add_index :recipes,  [:user_id, :name], unique: true |
 
 ### steps table
