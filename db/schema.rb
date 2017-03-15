@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170315091139) do
+ActiveRecord::Schema.define(version: 20170315111016) do
 
   create_table "ingredients", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20170315091139) do
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "nickname",               default: "", null: false
+    t.string   "nickname",               default: ""
     t.string   "thumbnail"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -60,7 +60,6 @@ ActiveRecord::Schema.define(version: 20170315091139) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
-    t.index ["nickname"], name: "index_users_on_nickname", unique: true, using: :btree
   end
 
   add_foreign_key "ingredients", "recipes"
