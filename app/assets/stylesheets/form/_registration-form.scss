@@ -1,0 +1,24 @@
+#user_register {
+  #register_header {
+    %h1.register_title_border {
+    }
+    #new_kitchen {
+      .main {
+        .field {
+          label {}
+          #kitchen_email {}
+        }
+        .field {
+          label {}
+          #kitchen_password {}
+        }
+        .field {
+          label {}
+          #kitchen_password_confirmation {}
+        }
+      .submit {
+        #kitchen_submit {}
+      }
+    }
+  }
+}
