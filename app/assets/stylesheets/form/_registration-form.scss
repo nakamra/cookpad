@@ -1,30 +1,32 @@
-#user_register {
-  #register_header {
-    font-size: 19px;
-    font-weight: bold;
-    color: $RedBrown;
-    .register_title_border {
-      position: relative;
-      padding: 10px 0 15px 20px;
-      border-bottom: 1px solid $Brown;
-    }
-    #new_kitchen {
-      .main {
-        .field {
-          label {}
-          #kitchen_email {}
-        }
-        .field {
-          label {}
-          #kitchen_password {}
-        }
-        .field {
-          label {}
-          #kitchen_password_confirmation {}
-        }
+.register-container {
+  .register-wrapper {
+    #register_header {
+      font-size: 19px;
+      font-weight: bold;
+      color: $RedBrown;
+      .register-title-border {
+        position: relative;
+        padding: 10px 0 15px 20px;
+        border-bottom: 1px solid $Brown;
       }
-      .submit {
-        #kitchen_submit {}
+      #new_kitchen {
+        .main {
+          .field {
+            label {}
+            #kitchen_email {}
+          }
+          .field {
+            label {}
+            #kitchen_password {}
+          }
+          .field {
+            label {}
+            #kitchen_password_confirmation {}
+          }
+        }
+        .submit {
+          #kitchen_submit {}
+        }
       }
     }
   }
