@@ -26,6 +26,7 @@
                 .field
                   .inner
                     = f.password_field :password, autocomplete: "off", class: "register-text-field"
+                  %p.notice ※パスワードは６文字以上で入力してください。
             %tr.login_info
               %th
                 = f.label :password_confirmation, value: "パスワード（確認）"
