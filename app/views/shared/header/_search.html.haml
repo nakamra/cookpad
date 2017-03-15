@@ -1,12 +1,12 @@
 .search
   .search-form
-    = form_tag search_recipes_path, method: 'GET' do
+    = form_tag search_recipes_path, method: 'GET', id: "search_recipe"  do
       %span.search-form__category
-        = text_field_tag :name, placeholder: "料理名・食材名"
+        = text_field_tag :search, nil, placeholder: "料理名・食材名"
       %span.search-form__cross
         = image_tag("https://assets.cpcdn.com/assets/shared/search_cross.png?472c95c3f05125c6b980363809532054062a90f554bb69b80e980c91e33cd301")
       %span.search-form__purpose
-        = text_field_tag :name, placeholder: "目的・用途", id: "purpose"
+        = text_field_tag :search, nil, placeholder: "目的・用途", id: "purpose"
       .search-form__submit-btn
         = submit_tag "レシピ検索", id: "submit-button"
 
