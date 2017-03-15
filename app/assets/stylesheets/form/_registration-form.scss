@@ -4,32 +4,36 @@
   border: 1px solid $Brown;
   border-radius: 5px;
   .register_header {
-    font-size: 19px;
-    font-weight: bold;
-    color: $RedBrown;
+    padding: 10px 0 15px 20px;
+    border-bottom: 1px solid $Brown;
     .register-title-border {
+      font-size: 19px;
+      color: $RedBrown;
+      font-weight: bold;
       position: relative;
-      padding: 10px 0 15px 20px;
-      border-bottom: 1px solid $Brown;
     }
-    #new_kitchen {
-      .main {
-        .field {
-          label {}
-          #kitchen_email {}
-        }
-        .field {
-          label {}
-          #kitchen_password {}
-        }
-        .field {
-          label {}
-          #kitchen_password_confirmation {}
+  }
+  #new_kitchen {
+    .main {
+      padding: 20px 20px 0 20px;
+      .register-table {
+        tbody {
+          .login_info{
+            th {
+              label {}
+            }
+            td {
+              .register-text-field {}
+              #kitchen_email {}
+              #kitchen_password {}
+              #kitchen_password_confirmation {}
+            }
+          }
         }
       }
-      .submit {
-        #kitchen_submit {}
-      }
+    }
+    .submit {
+      #kitchen_submit {}
     }
   }
 }
