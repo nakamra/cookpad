@@ -17,7 +17,15 @@
     .main {
       padding: 20px 20px 0 20px;
       .register-table {
+        margin-bottom: 20px;
+        width: 100%;
+        border-collapse: collapse;
         tbody {
+          .login_label {
+            th {
+              .icon_lock {}
+            }
+          }
           .login_info{
             th {
               label {}
