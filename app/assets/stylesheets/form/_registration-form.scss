@@ -3,34 +3,32 @@
   background-color: $White;
   border: 1px solid $Brown;
   border-radius: 5px;
-  .register-wrapper {
-    #register_header {
-      font-size: 19px;
-      font-weight: bold;
-      color: $RedBrown;
-      .register-title-border {
-        position: relative;
-        padding: 10px 0 15px 20px;
-        border-bottom: 1px solid $Brown;
+  .register_header {
+    font-size: 19px;
+    font-weight: bold;
+    color: $RedBrown;
+    .register-title-border {
+      position: relative;
+      padding: 10px 0 15px 20px;
+      border-bottom: 1px solid $Brown;
+    }
+    #new_kitchen {
+      .main {
+        .field {
+          label {}
+          #kitchen_email {}
+        }
+        .field {
+          label {}
+          #kitchen_password {}
+        }
+        .field {
+          label {}
+          #kitchen_password_confirmation {}
+        }
       }
-      #new_kitchen {
-        .main {
-          .field {
-            label {}
-            #kitchen_email {}
-          }
-          .field {
-            label {}
-            #kitchen_password {}
-          }
-          .field {
-            label {}
-            #kitchen_password_confirmation {}
-          }
-        }
-        .submit {
-          #kitchen_submit {}
-        }
+      .submit {
+        #kitchen_submit {}
       }
     }
   }
