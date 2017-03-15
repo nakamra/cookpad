@@ -9,6 +9,10 @@
       %li.global-menu__ps-link
         %a{:href => "/"}プレミアムサービス
       %li.global-menu__new-register-link
-        = link_to 'ユーザー登録(無料)', new_kitchen_registration_path
+      - if user_signed_in?
+        = current_user.email
+      - else
+        = link_to 'ユーザー登録(無料)', new_user_registration_path
+
       %li.global-menu__login-link
         %a{:href => "/"}ログイン
