@@ -1,4 +1,4 @@
-.button {
+.button, .submit_button {
   padding: 8px 10px;
   margin: 10px 0;
   border: 1px solid #cccccc;
@@ -27,4 +27,15 @@
     background: -moz-linear-gradient(top, #f7f7f7, #e4e4e4);
     background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e4e4e4));
     background: linear-gradient(to bottom, #f7f7f7, #e4e4e4);
+}
+
+.attention {
+  text-shadow: 0 -1px 0 #bd4b00;
+  border: 1px solid #cc5200;
+  background: #f06000;
+  background: #ff8a24;
+  background: -moz-linear-gradient(top, #ff8a24, #f06000);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8a24), to(#f06000));
+  background: linear-gradient(to bottom, #ff8a24, #f06000);
+  color: #ffffff !important;
 }

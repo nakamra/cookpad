@@ -1,0 +1,92 @@
+.register-container {
+  width: 970px;
+  background-color: $White;
+  border: 1px solid $Brown;
+  border-radius: 5px;
+  .register_header {
+    padding: 10px 0 15px 20px;
+    border-bottom: 1px solid $Brown;
+    .register-title-border {
+      font-size: 19px;
+      color: $RedBrown;
+      font-weight: bold;
+      position: relative;
+    }
+  }
+  #new_user {
+    .main {
+      padding: 20px 20px 0 20px;
+      .register-table {
+        margin-bottom: 20px;
+        width: 100%;
+        border-collapse: collapse;
+        tbody {
+          .login_label {
+            border-top: none;
+            border-bottom: #f2eee6 1px solid;
+            th {
+              font-size: 86%;
+              padding: 6px;
+              width: 20%;
+              .icon_lock {
+                @include background($url: '/images/lock.png', $x: 50%, $y: 50%);
+                vertical-align: middle;
+                margin-right: 3px;
+                margin-bottom: 3px;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+              }
+            }
+          }
+          .login_info{
+            border-bottom: #f2eee6 1px solid;
+            th {
+              font-weight: bold;
+              background: #faf9f4;
+              padding: 10px;
+              label {
+              margin-right: 0;
+              cursor: pointer;
+              }
+            }
+            td {
+              padding: 10px;
+              .field {
+                margin-bottom: 0px;
+                .inner {
+                  display: inline;
+                  position: relative;
+                  .register-text-field {
+                    font-size: 123.1%;
+                    margin-bottom: 0;
+                    width: 260px;
+                    border-color: #999999 #E0E0E0 #E0E0E0 #999999;
+                    border-width: 1px;
+                    border-style: solid;
+                    padding: 4px;
+                    background: url(/images/input_back.png) no-repeat;
+                  }
+                }
+                .notice {
+                  color: $Gray;
+                  font-size: 72%;
+                  font-weight: normal;
+                  margin-top: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .submit {
+      text-align: center;
+      #user_submit {
+        margin-bottom: 30px;
+        padding: 12px 30px;
+        font-size: 115%;
+      }
+    }
+  }
+}
