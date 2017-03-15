@@ -1,6 +1,7 @@
 #user_register {
   #register_header {
-    %h1.register_title_border {
+    .register_title_border {
+      font-size: 19px;
     }
     #new_kitchen {
       .main {
@@ -16,6 +17,7 @@
           label {}
           #kitchen_password_confirmation {}
         }
+      }
       .submit {
         #kitchen_submit {}
       }
