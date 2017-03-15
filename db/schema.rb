@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170313104349) do
+ActiveRecord::Schema.define(version: 20170315091139) do
 
   create_table "ingredients", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
@@ -23,7 +23,28 @@ ActiveRecord::Schema.define(version: 20170313104349) do
     t.index ["recipe_id"], name: "index_ingredients_on_recipe_id", using: :btree
   end
 
-  create_table "kitchens", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "recipes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name",                     null: false
+    t.string   "picture"
+    t.text     "copy",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.integer  "user_id"
+    t.index ["user_id", "name"], name: "index_recipes_on_user_id_and_name", unique: true, using: :btree
+    t.index ["user_id"], name: "index_recipes_on_user_id", using: :btree
+  end
+
+  create_table "steps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "body",                 limit: 60
+    t.string   "image"
+    t.integer  "step_position_number",            null: false
+    t.integer  "recipe_id"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.index ["recipe_id"], name: "index_steps_on_recipe_id", using: :btree
+  end
+
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "nickname",               default: "", null: false
     t.string   "thumbnail"
     t.string   "email",                  default: "", null: false
@@ -38,32 +59,11 @@ ActiveRecord::Schema.define(version: 20170313104349) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.index ["email"], name: "index_kitchens_on_email", unique: true, using: :btree
-    t.index ["nickname"], name: "index_kitchens_on_nickname", unique: true, using: :btree
-  end
-
-  create_table "recipes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "name",                     null: false
-    t.string   "picture"
-    t.text     "copy",       limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
-    t.integer  "kitchen_id"
-    t.index ["kitchen_id", "name"], name: "index_recipes_on_kitchen_id_and_name", unique: true, using: :btree
-    t.index ["kitchen_id"], name: "index_recipes_on_kitchen_id", using: :btree
-  end
-
-  create_table "steps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "body",                 limit: 60
-    t.string   "image"
-    t.integer  "step_position_number",            null: false
-    t.integer  "recipe_id"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
-    t.index ["recipe_id"], name: "index_steps_on_recipe_id", using: :btree
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["nickname"], name: "index_users_on_nickname", unique: true, using: :btree
   end
 
   add_foreign_key "ingredients", "recipes"
-  add_foreign_key "recipes", "kitchens"
+  add_foreign_key "recipes", "users"
   add_foreign_key "steps", "recipes"
 end
