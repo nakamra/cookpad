@@ -1,4 +1,8 @@
 .register-container {
+  width: 970px;
+  background-color: $White;
+  border: 1px solid $Brown;
+  border-radius: 5px;
   .register-wrapper {
     #register_header {
       font-size: 19px;
