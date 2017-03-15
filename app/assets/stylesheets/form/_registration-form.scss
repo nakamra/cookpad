@@ -22,15 +22,35 @@
         border-collapse: collapse;
         tbody {
           .login_label {
+            border-top: none;
+            border-bottom: #f2eee6 1px solid;
             th {
-              .icon_lock {}
+              font-size: 86%;
+              padding: 6px;
+              width: 20%;
+              .icon_lock {
+                @include background($url: '/images/lock.png', $x: 50%, $y: 50%);
+                vertical-align: middle;
+                margin-right: 3px;
+                margin-bottom: 3px;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+              }
             }
           }
           .login_info{
+            border-bottom: #f2eee6 1px solid;
             th {
-              label {}
+              font-weight: bold;
+              background: #faf9f4;
+              label {
+              margin-right: 0;
+              cursor: pointer;
+              }
             }
             td {
+              padding: 10px;
               .register-text-field {}
               #kitchen_email {}
               #kitchen_password {}
