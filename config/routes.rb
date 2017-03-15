@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :recipes, only: [:index, :new, :show] do
     collection do
       get 'post'
+      get 'search'
     end
   end
 
