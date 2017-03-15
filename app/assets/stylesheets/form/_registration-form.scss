@@ -58,6 +58,7 @@
                   display: inline;
                   position: relative;
                   .register-text-field {
+                    font-size: 123.1%;
                     margin-bottom: 0;
                     width: 260px;
                     border-color: #999999 #E0E0E0 #E0E0E0 #999999;
@@ -66,12 +67,12 @@
                     padding: 4px;
                     background: url(/images/input_back.png) no-repeat;
                   }
-                  #kitchen_email {}
-                  #kitchen_password {}
-                  #kitchen_password_confirmation {}
                 }
                 .notice {
-                  
+                  color: $Gray;
+                  font-size: 72%;
+                  font-weight: normal;
+                  margin-top: 5px;
                 }
               }
             }
@@ -80,7 +81,12 @@
       }
     }
     .submit {
-      #kitchen_submit {}
+      text-align: center;
+      #kitchen_submit {
+        margin-bottom: 30px;
+        padding: 12px 30px;
+        font-size: 115%;
+      }
     }
   }
 }
