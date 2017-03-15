@@ -44,6 +44,7 @@
             th {
               font-weight: bold;
               background: #faf9f4;
+              padding: 10px;
               label {
               margin-right: 0;
               cursor: pointer;
@@ -51,10 +52,28 @@
             }
             td {
               padding: 10px;
-              .register-text-field {}
-              #kitchen_email {}
-              #kitchen_password {}
-              #kitchen_password_confirmation {}
+              .field {
+                margin-bottom: 0px;
+                .inner {
+                  display: inline;
+                  position: relative;
+                  .register-text-field {
+                    margin-bottom: 0;
+                    width: 260px;
+                    border-color: #999999 #E0E0E0 #E0E0E0 #999999;
+                    border-width: 1px;
+                    border-style: solid;
+                    padding: 4px;
+                    background: url(/images/input_back.png) no-repeat;
+                  }
+                  #kitchen_email {}
+                  #kitchen_password {}
+                  #kitchen_password_confirmation {}
+                }
+                .notice {
+                  
+                }
+              }
             }
           }
         }
