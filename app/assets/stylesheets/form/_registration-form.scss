@@ -1,7 +1,12 @@
 #user_register {
   #register_header {
+    font-size: 19px;
+    font-weight: bold;
+    color: $RedBrown;
     .register_title_border {
-      font-size: 19px;
+      position: relative;
+      padding: 10px 0 15px 20px;
+      border-bottom: 1px solid $Brown;
     }
     #new_kitchen {
       .main {
