@@ -1,0 +1,24 @@
+.container
+  .login-container
+    .login-wrapper
+      .login-message
+      .user-login
+        .user-login__border
+          ユーザー登録されている方
+        .login-form
+          = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+            .field
+              = f.label :email, value: "メールアドレス"
+              %br/
+              = f.email_field :email, autofocus: true
+            .field
+              = f.label :password, value: "パスワード"
+              %br/
+              = f.password_field :password, autocomplete: "off"
+            .submit
+              = f.submit "ログイン"
+      .user-register
+        .user-register__border
+          ユーザー登録されていない方
+        %button.button.attention
+          クックパッドユーザー登録（無料）
