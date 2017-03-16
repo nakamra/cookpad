@@ -13,12 +13,12 @@
       .user-login__border {
         font-size: 115%;
         text-align: left;
-        border-bottom: 1px solid #e3dcca;
+        border-bottom: 1px solid $Brown;
         padding: 0 0 3px 0;
         margin: 10px 0;
         font-weight: bold;
         position: relative;
-        color: #4d2200;
+        color: $RedBrown;
       }
       .login-form {
         float: left;
@@ -33,9 +33,19 @@
           }
           .login-submit {
             text-align: center;
+            margin: 10px 0;
             .button {
               width: 100%;
             }
+          }
+        }
+      }
+      .login-guest {
+        .guest-box {
+          .title-bar {}
+          .guest-block {
+            label {}
+            p {}
           }
         }
       }
@@ -47,12 +57,12 @@
       &__border {
         font-size: 115%;
         text-align: left;
-        border-bottom: 1px solid #e3dcca;
+        border-bottom: 1px solid $Brown;
         padding: 0 0 3px 0;
         margin: 10px 0;
         font-weight: bold;
         position: relative;
-        color: #4d2200;
+        color: $RedBrown;
       }
       .user-register__notice {
         font-size: 86%;
