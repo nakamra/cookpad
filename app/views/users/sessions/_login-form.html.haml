@@ -13,6 +13,15 @@
             = f.password_field :password, autocomplete: "off"
             .login-submit
               = f.submit "ログイン", class: 'button'
+        .login-guest
+          .guest-box
+            .title-bar ゲスト用パス
+            .guest-block
+              %label email
+              %p guest@guest.com
+            .guest-block
+              %label password
+              %p guest
       .user-register
         .user-register__border
           ユーザー登録されていない方
