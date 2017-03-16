@@ -1,22 +1,65 @@
 .login-container {
+  width: 970px;
+  background: $White;
+  border: 1px solid $Brown;
+  border-radius: 5px;
+  overflow: hidden;
   .login-wrapper {
+    padding: 20px;
     .login-message {}
     .user-login {
-      .user-login__border {}
+      float: left;
+      width: 600px;
+      .user-login__border {
+        font-size: 115%;
+        text-align: left;
+        border-bottom: 1px solid #e3dcca;
+        padding: 0 0 3px 0;
+        margin: 10px 0;
+        font-weight: bold;
+        position: relative;
+        color: #4d2200;
+      }
       .login-form {
-        .new_user {
+        float: left;
+        padding: 10px;
+        form {
+          margin: 0 auto;
+          width: 280px;
           label {}
-          #user_email {}
-          #user_password {}
+          #user_email, #user_password {
+            width: 100%;
+            margin-bottom: 10px;
+          }
           .login-submit {
-            #submit {}
+            text-align: center;
+            .button {
+              width: 100%;
+            }
           }
         }
       }
     }
     .user-register {
-      .user-register__border {}
-      .regsister__button {}
+      float: right;
+      width: 300px;
+      text-align: center;
+      &__border {
+        font-size: 115%;
+        text-align: left;
+        border-bottom: 1px solid #e3dcca;
+        padding: 0 0 3px 0;
+        margin: 10px 0;
+        font-weight: bold;
+        position: relative;
+        color: #4d2200;
+      }
+      .user-register__notice {
+        font-size: 86%;
+      }
+      &__button {
+        font-size: 115%;
+      }
     }
   }
 }
