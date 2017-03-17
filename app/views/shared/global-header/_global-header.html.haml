@@ -8,13 +8,15 @@
     %ul.global-menu
       %li.global-menu__ps-link
         プレミアムサービス
-      %li.global-menu__new-register-link
+      - unless user_signed_in?
+        %li.global-menu__new-register-link
+          = link_to 'ユーザー登録(無料)', new_user_registration_path
+        %li.global-menu__login-link
+          = link_to 'ログイン', new_user_session_path
       - if user_signed_in?
-        = current_user.email
-      - else
-        = link_to 'ユーザー登録(無料)', new_user_registration_path
-      %li.global-menu__login-link
-      - if user_signed_in?
-        = link_to 'ログアウト', destroy_user_session_path
-      - else
-        = link_to 'ログイン', new_user_session_path
+        %li.global-menu__nickname
+          = current_user.email
+        %li.global-menu__config
+          #user_menu_config
+            = image_tag("/images/header_config.png")
+          = link_to 'ログアウト', destroy_user_session_path
