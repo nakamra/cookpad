@@ -57,5 +57,22 @@
     &__login-link a {
       color: $DarkBrown;
     }
+    &__nickname {
+
+    }
+    &__config {
+      #user_menu_config {
+        background: url("/images/icon_dropdown.png") 25px 49% no-repeat;
+        display: block;
+        padding-right: 12px;
+        margin-right: 0;
+        img {
+          margin-top: -4px;
+          border: 1px solid $White;
+          vertical-align: top;
+        }
+      }
+
+    }
   }
 }
