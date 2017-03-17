@@ -2,12 +2,12 @@
   .container
     %ul.service-menu
       %li.service-menu__index
-        %a{:href => "/"}サービス一覧
+        サービス一覧
       %li.service-menu__link
-        %a{:href => "/"} 楽チン♪「詰めるだけグラタン」
+        楽チン♪「詰めるだけグラタン」
     %ul.global-menu
       %li.global-menu__ps-link
-        %a{:href => "/"}プレミアムサービス
+        プレミアムサービス
       %li.global-menu__new-register-link
       - if user_signed_in?
         = current_user.email

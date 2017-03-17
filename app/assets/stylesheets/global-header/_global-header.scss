@@ -17,7 +17,7 @@
     float: left;
     padding: 9px 0px;
 
-    &__index a {
+    &__index {
       color: $Chestnut;
     }
 
@@ -27,7 +27,7 @@
       padding-left: 6.5px;
     }
 
-    &__link a {
+    &__link {
       color: $Chestnut;
       padding-left: 1.9px;
     }
@@ -47,7 +47,7 @@
       position: relative;
     }
 
-    &__ps-link a {
+    &__ps-link {
       color: $LightOrange;
       font-weight: bold;
     }
