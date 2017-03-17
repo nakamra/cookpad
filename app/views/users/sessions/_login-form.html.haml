@@ -1,7 +1,6 @@
 .container
   .login-container
     .login-wrapper
-      .login-message
       .user-login
         .user-login__border
           ユーザー登録されている方
@@ -11,6 +10,8 @@
             = f.email_field :email, autofocus: true
             = f.label :password, value: "パスワード"
             = f.password_field :password, autocomplete: "off"
+            .error-message
+              = flash[:alert]
             .login-submit
               = f.submit "ログイン", class: 'button'
         .login-guest
