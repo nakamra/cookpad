@@ -1,0 +1,32 @@
+.container
+  .login-container
+    .login-wrapper
+      .user-login
+        .user-login__border
+          ユーザー登録されている方
+        .login-form
+          = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+            = f.label :email, value: "メールアドレス"
+            = f.email_field :email, autofocus: true
+            = f.label :password, value: "パスワード"
+            = f.password_field :password, autocomplete: "off"
+            .error-message
+              = flash[:alert]
+            .login-submit
+              = f.submit "ログイン", class: 'button'
+        .login-guest
+          .guest-box
+            .title-bar ゲスト用パス
+            .email-block
+              %label メールアドレス
+              %p guest@guest.com
+            .pass-block
+              %label パスワード
+              %p guest1
+      .user-register
+        .user-register__border
+          ユーザー登録されていない方
+        %span.user-register__notice
+          まずはこちらからユーザー登録をお願いします。
+        .user-register__button
+          = link_to 'クックパッドユーザー登録（無料）', new_user_registration_path, class: "submit_button attention"

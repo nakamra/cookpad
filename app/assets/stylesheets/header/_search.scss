@@ -8,7 +8,7 @@
       line-height: 18px;
       position: relative;
       #search {
-        background: #ffffff url(/images/icon_header_search.png)7px 50% no-repeat;
+        background: $White url(/images/icon_header_search.png)7px 50% no-repeat;
         float: left;
         height: 100%;
         width: 210px;
@@ -35,11 +35,11 @@
 
         #submit-button{
           height: 32px;
-          border: 1px solid #cccccc;
+          border: 1px solid $StoneGray;
           border-radius: 3px;
-          background: linear-gradient(to bottom, #ffffff, #ececec);
+          background: linear-gradient(to bottom, $White, $SnowGray);
           padding: 0px 7px;
-          color: #3c3c3c;
+          color: $LightBlack;
           cursor: pointer;
         }
       }
@@ -58,7 +58,7 @@
       li {
         float: left;
         a {
-          color: #4d2200;
+          color: $RedBrown;
           margin-right: 6px;
         }
       }

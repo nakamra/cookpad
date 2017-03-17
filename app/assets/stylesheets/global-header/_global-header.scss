@@ -1,8 +1,8 @@
 .global-header {
   z-index: 1001;
-  background-color: #FFFFFF;
+  background-color: $White;
   width: 100%;
-  border-bottom: 1px solid #e3dcca;
+  border-bottom: 1px solid $Brown;
   height: 34px;
   position: fixed;
   top: 0;
@@ -18,17 +18,17 @@
     padding: 9px 0px;
 
     &__index a {
-      color: #986f4e;
+      color: $Chestnut;
     }
 
     &__index:after {
-      color: #eee;
+      color: $WhiteGray;
       content: "|";
       padding-left: 6.5px;
     }
 
     &__link a {
-      color: #986f4e;
+      color: $Chestnut;
       padding-left: 1.9px;
     }
 
@@ -48,14 +48,14 @@
     }
 
     &__ps-link a {
-      color: #ff8c1a;
+      color: $LightOrange;
       font-weight: bold;
     }
     &__new-register-link a {
-      color: #330000;
+      color: $DarkBrown;
     }
     &__login-link a {
-      color: #330000;
+      color: $DarkBrown;
     }
   }
 }
