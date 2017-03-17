@@ -2,19 +2,26 @@
   .container
     %ul.service-menu
       %li.service-menu__index
-        %a{:href => "/"}サービス一覧
+        サービス一覧
       %li.service-menu__link
-        %a{:href => "/"} 楽チン♪「詰めるだけグラタン」
+        楽チン♪「詰めるだけグラタン」
     %ul.global-menu
       %li.global-menu__ps-link
-        %a{:href => "/"}プレミアムサービス
-      %li.global-menu__new-register-link
+        プレミアムサービス
+      - unless user_signed_in?
+        %li.global-menu__new-register-link
+          = link_to 'ユーザー登録(無料)', new_user_registration_path
+        %li.global-menu__login-link
+          = link_to 'ログイン', new_user_session_path
       - if user_signed_in?
-        = current_user.email
-      - else
-        = link_to 'ユーザー登録(無料)', new_user_registration_path
-      %li.global-menu__login-link
-      - if user_signed_in?
-        = link_to 'ログアウト', destroy_user_session_path
-      - else
-        = link_to 'ログイン', new_user_session_path
+        %li.global-menu__nickname
+          = link_to "#{current_user.email}"
+        %li.global-menu__config
+          #user_menu_config
+            = image_tag("/images/header_config.png")
+    .config-dropdown-menu
+      %ul
+        %li.user-edit
+          = link_to "登録情報", edit_user_registration_path, class: "user-edit__link"
+        %li.logout
+          = link_to "ログアウト", destroy_user_session_path, class: "logout__link"
