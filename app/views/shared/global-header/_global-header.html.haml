@@ -15,7 +15,13 @@
           = link_to 'ログイン', new_user_session_path
       - if user_signed_in?
         %li.global-menu__nickname
-          = link_to "#{current_user.email}", edit_user_registration_path
+          = link_to "#{current_user.email}"
         %li.global-menu__config
           #user_menu_config
             = image_tag("/images/header_config.png")
+    .config-dropdown-menu
+      %ul
+        %li.user-edit
+          = link_to "登録情報", edit_user_registration_path, class: "user-edit__link"
+        %li.logout
+          = link_to "ログアウト", destroy_user_session_path, class: "logout__link"
