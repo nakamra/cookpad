@@ -1,23 +1,23 @@
 .button, .submit_button {
   padding: 8px 10px;
   margin: 10px 0;
-  border: 1px solid #cccccc;
-  background: #ececec;
-  background: #ffffff;
-  background: -moz-linear-gradient(top, #ffffff, #ececec);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ececec));
-  background: linear-gradient(to bottom, #ffffff, #ececec);
+  border: 1px solid $StoneGray;
+  background: $SnowGray;
+  background: $White;
+  background: -moz-linear-gradient(top, $White, $SnowGray);
+  background: -webkit-gradient(linear, left top, left bottom, from($White), to($SnowGray));
+  background: linear-gradient(to bottom, $White, $SnowGray);
   border-radius: 5px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   display: inline-block;
   font-family: inherit;
   font-weight: bold;
   min-width: 160px;
-  color: #3c3c3c;
+  color: $LightBlack;
   text-align: center;
   vertical-align: middle;
   text-decoration: none !important;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 $White;
   cursor: pointer;
   -webkit-appearance: none;
 }
@@ -37,5 +37,5 @@
   background: -moz-linear-gradient(top, #ff8a24, #f06000);
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8a24), to(#f06000));
   background: linear-gradient(to bottom, #ff8a24, #f06000);
-  color: #ffffff !important;
+  color: $White !important;
 }

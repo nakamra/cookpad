@@ -93,10 +93,10 @@
             line-height: 140%;
             padding: 0;
             overflow: auto;
-            border: 1px solid #cccccc;
-            border-top: 1px solid #666;
-            border-left: 1px solid #666;
-            background: #ffffd3;
+            border: 1px solid $StoneGray;
+            border-top: 1px solid $Gray;
+            border-left: 1px solid $Gray;
+            background: $CreamYellow;
             vertical-align: middle;
             border-radius: 3px;
             resize: none;

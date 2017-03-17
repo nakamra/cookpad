@@ -1,6 +1,6 @@
 @mixin crown {
   z-index: 1;
-  background: #ffffff;
+  background: $White;
   position: absolute;
   top: -10px;
   left: -6px;
@@ -13,12 +13,12 @@
   font-weight: bold;
   background: #f8f6f0;
   clear: both;
-  color: #3c3c3c;
+  color: $LightBlack;
   padding: 5px 3px 3px 12px;
   margin: 0;
   position: relative;
   a:visited {
-      color: #3c3c3c;
+      color: $LightBlack;
   }
   a {
     text-decoration: underline;

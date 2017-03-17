@@ -21,10 +21,10 @@
         font-size: 115%;
         font-weight: bold;
         .honor-recipe__text--left {
-          color: #ff6600;;
+          color: $BrightOrange;
         }
         .honor-recipe__text--right {
-          color: #330000;
+          color: $DarkBrown;
         }
         .honor-recipe__text--right:hover {
           text-decoration: underline;

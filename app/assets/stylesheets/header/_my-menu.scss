@@ -16,7 +16,7 @@
             vertical-align: top;
         }
         span {
-          color: #330000;
+          color: $DarkBrown;
           font-size: 79%;
           display: block;
           margin-top: 3px;
@@ -30,7 +30,7 @@
         position: absolute;
         top: 9px;
         left: 0;
-        color: #977847;
+        color: $Khaki;
         display: block;
         font-weight: bold;
         text-align: center;
@@ -49,7 +49,7 @@
         line-height: 34px;
         text-shadow: 0 -1px 0 #6e8129;
         background: linear-gradient(to bottom, #aec853, #8fa836);
-        color: #ffffff;
+        color: $White;
         img {
           margin-top: -3px;
           vertical-align: middle;
