@@ -1,0 +1,38 @@
+.container
+  .user-container
+    .user-header
+      %h1.user-title-border 登録情報
+      %p このページはあなたのみ閲覧できます
+    .account-info
+      .user-icon-wrapper
+      %h2.nickname
+      .register-and-update-date
+    .user-info
+      .content-title
+      = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+        = devise_error_messages!
+        %table.user-info-table
+          %tbody
+            %tr
+              %th
+                = f.label :email, value: "メールアドレス"
+              %td
+                = f.email_field :email, autofocus: true
+            %tr
+              %th
+                = f.label :password, value: "パスワード"
+              %td
+                = f.password_field :password, autocomplete: "off"
+            %tr
+              %th
+                = f.label :password_confirmation, value: "パスワード確認"
+              %td
+                = f.password_field :password_confirmation, autocomplete: "off"
+            %tr
+              %th
+                = f.label :current_password, value: "現在のパスワード"
+              %td
+                = f.password_field :current_password, autocomplete: "off"
+              %td
+                .setting_button
+                  = f.submit "設定する"
