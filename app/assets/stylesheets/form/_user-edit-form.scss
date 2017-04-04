@@ -1,21 +1,52 @@
 .user-container {
-  .user-header {
-    .user-title-border {}
-    p {}
-  }
-  .account-info {
-    .user-icon-wrapper {}
-    .nickname {}
-    .register-and-update-date {}
-  }
-  .user-info {
-    .content-title {
-      .user-info-table {
-        tbody {
-          tr {
-            th {}
-            td {
-              .setting_button {}
+  float: left;
+  width: 650px;
+  background-color: $White;
+  border: 1px solid $Brown;
+  border-radius: 5px;
+  .user-box {
+    float: left;
+    width: 610px;
+    margin: 10px 20px;
+    .user-header {
+      position: relative;
+      h1 {
+        color: $Coffee;
+        font-size: 138.5%;
+        font-weight: bold;
+      }
+      &__border {
+        margin-bottom: 15px;
+        padding: 0px;
+        border-bottom: 1px solid $LightGreen;
+      }
+      p {
+        color: $Gray;
+        font-size: 85%;
+      }
+      &__right {
+        position: absolute;
+        right: 0px;
+        top: 6px;
+        bottom: 10px;
+      }
+    }
+    .account-info {
+      .user-icon-wrapper {}
+      .nickname {}
+      .register-and-update-date {}
+    }
+    .user-info {
+      .content-title {
+        table.user-info-table {
+          tbody {
+            tr {
+              th {}
+              td {
+                .setting_button {
+
+                }
+              }
             }
           }
         }
