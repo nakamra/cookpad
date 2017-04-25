@@ -1,0 +1,83 @@
+.user-container {
+  float: left;
+  width: 650px;
+  background-color: $White;
+  border: 1px solid $Brown;
+  border-radius: 5px;
+  .user-box {
+    float: left;
+    width: 610px;
+    margin: 10px 20px;
+    .user-header {
+      position: relative;
+      h1 {
+        color: $Coffee;
+        font-size: 138.5%;
+        font-weight: bold;
+      }
+      &__border {
+        margin-bottom: 15px;
+        padding: 0px;
+        border-bottom: 1px solid $LightGreen;
+      }
+      p {
+        color: $Gray;
+        font-size: 85%;
+      }
+      &__right {
+        position: absolute;
+        right: 0px;
+        top: 6px;
+        bottom: 10px;
+      }
+    }
+    .account-info {
+      .user-icon-wrapper {}
+      .nickname {}
+      .register-and-update-date {}
+    }
+    .user-info {
+      .content-title {
+        margin-bottom: 5px;
+        color: $Coffee;
+        font-weight: bold;
+        font-size: 108%;
+        .icon_img {
+          vertical-align: middle;
+        }
+        .notice {
+          padding-left: 5px;
+          color: $Gray;
+          font-weight: normal;
+          font-size: 11px;
+        }
+      }
+      form {
+        table.user-info-table {
+          tbody {
+            tr {
+              th {
+                border: 1px solid #D6D7B9;
+                border-right: 1px solid #e5e5e5;
+                width: 140px;
+                font-weight: normal;
+                color: #B09068;
+                background: #EBE4C9;
+                padding: 5px;
+              }
+              td.setting_button {
+                .submit_button {
+                  min-width: 60px;
+                  margin: 3px 0;
+                  padding: 3px 9px;
+                  font-weight: normal;
+                  font-size: 86%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
