@@ -21,7 +21,7 @@
             %span MYニュース
             %span.date 27
         %li.my-menu-list__post-btn
-          %a.my-menu-list__post-btn--link{:href => "/"}
+          = link_to new_recipe_path, class: "my-menu-list__post-btn--link" do
             %span
               = image_tag("https://assets.cpcdn.com/assets/global/icon_service_menu_post_recipe.png?a8329a321de116df7515a4d363e1914036c95b1caedc2c3b505388c93f7366b7")
               レシピを書く
