@@ -3,7 +3,7 @@
   .ingredients-box
     .ingredients-content
       .ingredients-edit
-        = form_tag("/recipes/#{@recipe.id}/ingredients", method: :post) do
+        = form_for @recipe do |f|
           .ingredients-title
             材料
             %span
@@ -15,8 +15,9 @@
               .ingredients-table-head__quantity.table-head
                 分量
             .ingredients-table-liner
-              = text_field :ingredient, :name, value: "", placeholder: "例）豚肉", class: "ingredients-table-liner__name text-field"
-              = text_field :ingredient, :quantity, value: "", placeholder: "例）350g", class: "ingredients-table-liner__quantity text-field"
+              = f.fields_for :ingredients do |i|
+                = i.text_field :name, placeholder: "例）豚肉", class: "ingredients-table-liner__name text-field"
+                = i.text_field :quantity, placeholder: "例）350g", class: "ingredients-table-liner__quantity text-field"
             .ingredient-submit
-              = submit_tag "保存して閉じる", id: "ingredient-submit", class: "button"
+              = f.submit "保存して閉じる", id: "ingredient-submit", class: "button"
     %button#modalClose close
