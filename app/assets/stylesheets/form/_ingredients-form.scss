@@ -43,7 +43,7 @@
         .ingredients-table {
           clear: both;
           .ingredients-table-head {
-            margin: 5px 0 5px 35px;
+            margin: 5px 0 10px 35px;
             color: $Bordeaux;
             font-weight: bold;
             .table-head {
@@ -79,6 +79,29 @@
             .ingredients-table-liner__quantity {
               width: 135px;
               float: left;
+            }
+            .ingredients-table-liner__check {
+              display: none;
+            }
+            .ingredients-table-liner__delete {
+              float: left;
+              width: 19px;
+              height: 19px;
+              display: block;
+              margin-top: 5.5px;
+              background: url(/images/ingredient_edit.png) no-repeat;
+              background-position: 0px -24px;
+            }
+          }
+          .add-ingredient-liner {
+            .button {
+            color: #3c3c3c;
+            font-size: 80%;
+            padding: 3px 9px;
+            margin: 3px 0 3px 35px;
+            min-width: 60px;
+            border-radius: 3px;
+            font-weight: normal
             }
           }
           .ingredient-submit {
