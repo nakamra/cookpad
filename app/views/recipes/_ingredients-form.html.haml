@@ -14,7 +14,7 @@
                 材料・調味料
               .ingredients-table-head__quantity.table-head
                 分量
-            #ingredients-box
+            #ingredients_box
               = f.fields_for :ingredients do |i|
                 .ingredients-table-liner{ id: "add_ingredient_#{i.index}"}
                   = i.text_field :name, placeholder: "例）豚肉", class: "ingredients-table-liner__name text-field"
@@ -22,7 +22,7 @@
                   = i.check_box :_destroy, class: "ingredients-table-liner__check"
                   %span.ingredients-table-liner__delete{ data: { id: i.index, default: 'default' } }
               .add-ingredient-liner
-                .button#add-ingredient-liner-btn
+                .button#add_ingredient_liner_btn
                   行を追加する
               .ingredient-submit
                 = f.submit "保存して閉じる", id: "ingredient-submit", class: "button"
