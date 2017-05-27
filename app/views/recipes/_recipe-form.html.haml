@@ -20,7 +20,7 @@
                 材料
                 %span （２人分）
             .ingredients-lists
-              = render (@ingredients)
+              = render @ingredients
       .recipe-steps
         - (1..4).each do |num|
           .step{ class: ( "step_last" if num == 4 ) }
