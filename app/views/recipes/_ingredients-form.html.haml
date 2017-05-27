@@ -14,10 +14,16 @@
                 材料・調味料
               .ingredients-table-head__quantity.table-head
                 分量
-            .ingredients-table-liner
+            #ingredients-box
               = f.fields_for :ingredients do |i|
-                = i.text_field :name, placeholder: "例）豚肉", class: "ingredients-table-liner__name text-field"
-                = i.text_field :quantity, placeholder: "例）350g", class: "ingredients-table-liner__quantity text-field"
-            .ingredient-submit
-              = f.submit "保存して閉じる", id: "ingredient-submit", class: "button"
+                .ingredients-table-liner{ id: "add_ingredient_#{i.index}"}
+                  = i.text_field :name, placeholder: "例）豚肉", class: "ingredients-table-liner__name text-field"
+                  = i.text_field :quantity, placeholder: "例）350g", class: "ingredients-table-liner__quantity text-field"
+                  = i.check_box :_destroy, class: "ingredients-table-liner__check"
+                  %span.ingredients-table-liner__delete{ data: { id: i.index, default: 'default' } }
+              .add-ingredient-liner
+                .button#add-ingredient-liner-btn
+                  行を追加する
+              .ingredient-submit
+                = f.submit "保存して閉じる", id: "ingredient-submit", class: "button"
     %button#modalClose close
