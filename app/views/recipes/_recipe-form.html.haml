@@ -12,19 +12,15 @@
         .recipe-image
           = image_tag("/images/blank.png")
         #recipe-ingredients
-          .ingredient-title-bar
-            %h3.ingredient-title
-              材料
-              %span （２人分）
-          .ingredients-lists
-            .ingredient-row
-              .ingredient-row__name
-                %span ごま油
-              .ingredient-row__quantity 大さじ１
-            .ingredient-row
-              .ingredient-row__name
-                %span レンコン
-              .ingredient-row__quantity 200g
+          - if @recipe.ingredient_ids.empty?
+            = image_tag("https://assets.cpcdn.com/assets/themes/recipe/blank_ingredients.gif?23d43ef50f06c118155d9ac6c3fbfe1fa6a589c8f7b52fa3810d2c06865be3a5")
+          - else
+            .ingredient-title-bar
+              %h3.ingredient-title
+                材料
+                %span （２人分）
+            .ingredients-lists
+              = render @ingredients
       .recipe-steps
         - (1..4).each do |num|
           .step{ class: ( "step_last" if num == 4 ) }
