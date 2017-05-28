@@ -1,6 +1,6 @@
-.ingredient-row
-  .ingredient-row__name
-    %span
+- if ingredient.id?
+  .ingredient-row{ class: "ingredient_#{ingredient.id}" }
+    .ingredient-row__name
       = ingredient.name
-  .ingredient-row__quantity
-    = ingredient.quantity
+    .ingredient-row__quantity
+      = ingredient.quantity
