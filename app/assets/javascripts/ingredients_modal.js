@@ -12,6 +12,17 @@ $(function() {
     ingredient_num ++;
   });
 
+  $('#ingredients_box').on('click', '.ingredients-table-liner__delete', function() {
+    var inputId = $(this).data('id');
+    var defaultData = $(this).data('default');
+    if (defaultData == 'default') {
+      $(this).prev().prop('checked', true);
+      $('#add_ingredient_' + inputId).hide();
+    }else{
+      $('#add_ingredient_' + inputId).remove();
+    }
+  });
+
   $('#recipe-ingredients').on('click',function() {
     $("#ingredients-modal-overlay").show();
     $("#ingredients-modal-wrapper").show();
